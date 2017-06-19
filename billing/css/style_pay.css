@@ -1,0 +1,810 @@
+/*
+* @Author: Administrator
+* @Date:   2016-12-19 10:04:49
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-11 17:43:39
+*/
+body{
+	background:#ffffff;
+	font-family: Arial;
+	color: #333333;
+}
+.ui-header{
+	height:2.13rem;
+	line-height: 2.13rem;
+	background: #fafafa;
+	color: #111111;
+}
+.ui-header h1{
+	font-size: 0.8rem;
+}
+.ui-header select{
+	display: block;
+	height: 0.7rem;
+	font-size: 0.53rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -0.35rem;
+        background: #fafafa;
+    border: none;
+}
+.ui-footer{
+	height:2.22rem;
+	background: #fafafa;
+	color: #111111;
+	line-height: 2.22rem;
+}
+.ui-footer a{
+	float: right;
+	margin-right: 0.533rem;
+	color: #29c1ec;
+	font-size: 0.622rem;
+	text-decoration: underline;	
+}
+.ui-footer .countrySelect{
+	border:0.04px solid #dddddd;
+	border-radius:0.09rem;
+	min-width: 4.8rem;
+	height: 1rem;
+	font-size: 0.8rem;
+	margin-left: 0.53rem;
+	text-indent: 0.3rem;
+}
+.ui-header ~ .ui-container {
+    border-top: 2.13rem solid transparent;
+}
+.ui-footer ~ .ui-container {
+    border-bottom: 2.22rem solid transparent;
+}
+/* ui dialog */
+.ui-dialog{
+	background:rgba(0,0,0,0.80);
+}
+.ui-dialog-cnt{
+	width: 12rem;
+	background:#ffffff;
+	border-radius:0.1778rem;
+	padding-left: 1.333rem;
+	padding-right: 1.333rem;
+}
+.ui-dialog-hd {
+    height: 2.222rem;
+    line-height: 2.222rem;
+    text-align: center;
+    position: relative;
+}
+.ui-dialog-hd h3{
+	font-size:0.8rem;
+	color:#29c1ec;
+	letter-spacing:0px;
+}
+.ui-dialog-bd{
+	font-family:HelveticaNeue;
+	font-size:0.667rem;
+	color:#666666;
+	letter-spacing:0px;
+	line-height:0.933rem;
+	text-align:left;
+	border-top: none!important;
+	padding:0;
+}
+.ui-dialog-ft{
+	margin-top:1rem;
+	margin-bottom: 0.844rem;
+	height: inherit;
+}
+.ui-dialog-ft button{
+	background:#29c1ec!important;
+	border-radius:0.178rem;
+	height:1.778rem;
+	font-size:0.667rem;
+	color:#ffffff;
+	margin-top: 1rem;
+    margin-bottom: 0.844rem;
+}
+/* 内容区域 */
+   /* 头部公共部分 */
+.ui-container div.header{
+	height:1.378rem;
+	text-align: right;
+}
+.ui-container i.adminIcon{
+	display: inline-block;
+	width:0.667rem;
+	height: 0.667rem;
+	background: url(../imgs/user.png) no-repeat center;
+	background-size: 0.667rem 0.667rem;
+	vertical-align: sub;
+	margin-right: 0.333rem;
+}
+.ui-container div.header span{
+	line-height: 1.378rem;
+	font-size: 0.489rem;
+	color: #333333;
+}
+.ui-container div.header span.userId{
+	margin-right: 0.333rem;
+}
+.ui-container div.header span.userBalance{
+	margin-right: 0.533rem;
+}
+.ui-container div.header span.userBalance i{
+	line-height: 1.378rem;
+	color: #29c1ec;
+}
+
+/* 首页 */
+.ui-container  .contain-part p.itemPrice{
+	font-size: 0.622rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.itemPrice-1{
+	margin-top: 1.667rem;
+}
+.ui-container  .contain-part p.itemPrice-2{
+	margin-top: 1rem;
+}
+.ui-container  .contain-part p.itemPrice i.price{
+	color: #29c1ec;
+}
+.ui-container  .contain-part button.userMooConBtn{
+	display: block;
+	background:#29c1ec;
+	border-radius:6px;
+	width:13.333rem;
+	height:1.956rem;
+	font-family:Arial;
+	font-size:0.711rem;
+	color:#ffffff;
+	margin: 0 auto;
+	margin-top: 1.822rem;
+}
+.ui-container  .contain-part p.otherMethod{
+	font-size: 0.711rem;
+	text-align: left;
+	margin-top: 1.333rem;
+}
+.ui-container  .contain-part p.otherMethod span{
+	margin-left: 0.53rem;
+}
+.ui-container  .contain-part  div.paymentKind{
+	padding-left: 0.53rem;
+	padding-right: 0.53rem;
+}
+.ui-container  .contain-part  div.paymentKind table{
+	margin-top: 0.889rem;
+	font-size: 0.5778rem;
+}
+.ui-container  .contain-part  div.paymentKind table tr{
+	height: 1.333rem;
+}
+.ui-container  .contain-part  div.paymentKind table tr td{
+	border-right: 1px solid #e0e0e0;
+}
+.ui-container  .contain-part  div.paymentKind table tr td.active{
+	background: #29c1ec;
+	color: #ffffff;
+}
+.ui-container  .contain-part  div.paymentKind div.showMethod{
+	margin-top: 1.333rem;
+}
+.ui-container  .contain-part  div.paymentKind div.showMethod .ui-grid-trisect > li {
+    text-align: center;
+}
+
+.ui-container  .contain-part  div.paymentKind div.showMethod li img{
+	width: 3.333rem;
+	height: 3.333rem;
+}
+.ui-container  .contain-part  div.paymentKind div.showMethod li p{
+	margin-top: 0.444rem;
+}
+.ui-container  .contain-part  div.paymentKind div.showMethod  .ui-whitespace{
+	padding-left: 0.778rem;
+	padding-right: 0.778rem;
+}
+
+/* mol mycard payment page */
+.ui-container  .contain-part p.mol_pay_title{
+	margin-top: 1.555rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.mol_pay_title span{
+	font-size:0.889rem;
+	color:#333333;
+}
+.ui-container  .contain-part div.mol_pay_form{
+	padding-right: 1.333rem;
+	padding-left: 1.333rem;
+}
+.ui-container  .contain-part div.mol_pay_form input.textInput{
+	background:#fafafa;
+	border:0.022rem solid #dddddd;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	font-size: 0.711rem;
+	color: #999999;
+	text-indent: 0.533rem;
+}
+.ui-container  .contain-part div.mol_pay_form a.formBtn{
+	display: inline-block;
+	text-align: center;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	line-height: 1.911rem;
+	font-size: 0.711rem;
+	color:#ffffff;
+}
+
+.ui-container  .contain-part div.mol_pay_form input.textCardNum{
+	margin-top: 1.889rem;
+}
+.ui-container  .contain-part div.mol_pay_form input.CardPaw{
+	margin-top: 0.667rem;
+}
+.ui-container  .contain-part div.mol_pay_form a.confirmBtn{
+	margin-top: 1.778rem;
+}
+.ui-container  .contain-part div.mol_pay_form a.resetBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.867rem;
+	line-height: 1.867rem;
+	font-size: 0.711rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-bottom: 1rem;
+}
+/* sms payment show */
+.ui-container  .contain-part p.sms_pay_title{
+	margin-top: 2rem;
+	font-size: 0.8rem;
+	color: #333333;
+	text-align: center;
+}
+.ui-container  .contain-part p.sms_pay_price{
+	margin-top: 0.778rem;
+	font-size: 0.622rem;
+	color: #333333;
+	text-align: center;
+}
+.ui-container  .contain-part p.sms_pay_price span i.priceNum{
+	color: #29c1ec;
+}
+.ui-container  .contain-part div.smsTradeInfo{
+	padding-left: 0.5333rem;
+	padding-right: 0.5333rem;
+	text-align: center;
+}
+.ui-container  .contain-part div.smsTradeInfo table{
+	margin-top: 1.111rem;
+}
+.ui-container  .contain-part div.smsTradeInfo table tr td{
+	height: 1.333rem;
+	font-size: 0.5333rem;
+	border: 1px solid #dddddd;
+}
+.ui-container  .contain-part div.smsTradeInfo table tr td.headTable{
+	color: #111111;
+	font-size:0.5778rem;
+}
+.ui-container  .contain-part div.smsTradeInfo a.smsPayConfirmBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 1.778rem;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:13.333rem;
+	height:1.955rem;
+	line-height: 1.955rem;
+	font-size:0.7111rem;
+	color:#ffffff;
+}
+.ui-container  .contain-part div.smsTradeInfo a.reselectPayBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:13.244rem;
+	height:1.867rem;
+	line-height: 1.867rem;
+	font-size:0.7111rem;
+	color:#29c1ec;
+	margin-bottom: 2.222rem;
+}
+
+/* download store */
+.ui-container  .contain-part p.downloadMooStoreText{
+	text-align: center;
+	font-size:0.8rem;
+	color:#333333;
+	margin-top: 2.222rem;
+}
+.ui-container  .contain-part div.downloadBtns{
+	text-align: center;
+}
+.ui-container  .contain-part div.downloadBtns a.MooStoreDownloadBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 2.222rem;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:13.333rem;
+	height:1.955rem;
+	font-size:0.7111rem;
+	color:#ffffff;
+	line-height: 1.955rem;
+}
+.ui-container  .contain-part div.downloadBtns a.CancelBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:13.244rem;
+	height:1.867rem;
+	font-size:0.7111rem;
+	color:#29c1ec;
+	line-height: 1.867rem;
+}
+/* bind  Moo Store Pages */
+.ui-container  .contain-part p.bind_Moo_store_title{
+	margin-top: 1.555rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.bind_Moo_store_title span{
+	font-size:0.889rem;
+	color:#333333;
+}
+.ui-container  .contain-part div.bind_Moo_store_form{
+	padding-right: 1.333rem;
+	padding-left: 1.333rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form input.textInput{
+	background:#fafafa;
+	border:0.022rem solid #dddddd;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	font-size: 0.711rem;
+	color: #999999;
+	text-indent: 0.533rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form a.formBtn{
+	display: inline-block;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	font-size: 0.711rem;
+	color:#ffffff;
+	line-height: 1.911rem;
+	text-align: center;
+}
+
+.ui-container  .contain-part div.bind_Moo_store_form input.textCardNum{
+	margin-top: 1.889rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form input.CardPaw{
+	margin-top: 0.667rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form a.confirmBtn{
+	margin-top: 1.333rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form a.resetBtn{
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.867rem;
+	font-size: 0.711rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-bottom: 2.222rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_form p.forgetPassword{
+	text-align: right;
+	line-height: 70px;
+}
+.ui-container  .contain-part div.bind_Moo_store_form p.forgetPassword a{
+	color: #29c1ec;
+	font-size: 0.5778rem;
+	text-decoration: underline;
+}
+.ui-footer .textTips{
+	float: left;
+	line-height: 0.711rem;
+	color: #666666;
+	font-size: 0.5778rem;
+	margin-top: 0.4rem;
+	margin-left: 0.5333rem;
+}
+
+/* 绑定cm账号成功 页面*/
+.ui-container  .contain-part p.bind_Moo_store_successTit{
+	margin-top: 1.555rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.bind_Moo_store_successTit span{
+	font-size:0.889rem;
+	color:#333333;
+}
+.ui-container  .contain-part p.bind_Moo_store_success{
+	margin-top: 1rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.bind_Moo_store_success span{
+	font-size:1rem;
+	color:#111111;
+}
+.ui-container  .contain-part p.bind_Moo_store_success_next{
+	margin-top:0.889rem;
+	text-align: center;
+	font-size:0.7556rem;
+	color:#666666;
+}
+.ui-container  .contain-part div.bind_Moo_store_successBtns {
+	text-align: center;
+}
+.ui-container  .contain-part div.bind_Moo_store_successBtns a.backToGameBtn{
+	display: inline-block;
+	margin-top: 2.222rem;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:13.333rem;
+	height:1.955rem;
+	font-size:0.7111rem;
+	color:#ffffff;
+	line-height: 1.955rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_successBtns a.setPasswordBtn,
+.ui-container  .contain-part div.bind_Moo_store_successBtns a.enterWalletBtn{
+	display: inline-block;
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:13.244rem;
+	height:1.867rem;
+	font-size:0.7111rem;
+	color:#29c1ec;
+	line-height: 1.867rem;
+}
+.ui-container  .contain-part div.bind_Moo_store_successBtns a.enterWalletBtn{
+	margin-bottom: 1rem;
+}
+/* 设置支付密码的页面 */
+.ui-container  .contain-part p.set_CMstore_payPassword_title{
+	margin-top: 1.555rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.set_CMstore_payPassword_title span{
+	font-size:0.889rem;
+	color:#333333;
+}
+.ui-container  .contain-part div.pwd-box{
+    background:#fafafa;
+	border-radius:4px;
+	width:13.333rem;
+	height:2.1778rem;
+	position: relative;
+	margin:0 auto;
+	margin-top: 2.222rem;	
+}
+.ui-container  .contain-part div.pwd-box input[type="tel"]{
+	width: 100%;
+    height: 2.1778rem;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    font-size: 0.5333rem;
+    opacity: 0;
+    z-index: 1;
+}
+.ui-container  .contain-part div.pwd-box div.fake-box{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+}
+.ui-container  .contain-part div.pwd-box div.fake-box .ui-col{
+	border-right: 1px solid #dddddd;
+}
+.ui-container  .contain-part div.pwd-box div.fake-box input{
+	width: 100%;
+    height: 2.1778rem;
+    border: none;
+    text-align: center;
+    font-size: 1.3rem;
+    background: #fafafa;
+    line-height: 2.1778rem;
+}
+/* 输入密码去确认支付 */
+.ui-container  .contain-part p.enterPassword_title{
+	margin-top: 1.555rem;
+	text-align: center;
+}
+.ui-container  .contain-part p.enterPassword_title span{
+	font-size:0.889rem;
+	color:#333333;
+}
+.ui-container  .contain-part p.enterPassword_priceShow{
+	margin-top: 0.778rem;
+	text-align: center;
+	font-size: 0.6222rem;
+	color: #111111;
+}
+.ui-container  .contain-part p.enterPassword_priceShow span i.price{
+	color: #29c1ec;
+}
+.ui-container  .contain-part div.enterPassword_priceShow_input{
+	margin-top: 2.222rem;
+}
+.ui-container  .contain-part p.enterPassword_priceShow_forgetBtn{
+	text-align: right;
+	margin-right: 1.333rem;
+	margin-top: 0.444rem;
+}
+.ui-container  .contain-part p.enterPassword_priceShow_forgetBtn a{
+	font-size: 0.5778rem;
+	color: #29c1ec;
+	text-decoration: underline;
+}
+/* 注册Moo Store */
+.ui-container  .contain-part p.registMoostore_title{
+	font-size:0.8rem;
+	color:#333333;
+	line-height:1rem;
+	text-align:center;
+	margin-top: 2.222rem;
+}
+.ui-container  .contain-part div.registMooStore_form{
+	padding-right: 1.333rem;
+	padding-left: 1.333rem;
+}
+.ui-container  .contain-part div.registMooStore_form div.inputcode{
+	position: relative;
+}
+.ui-container  .contain-part div.registMooStore_form a.sendPhoneBtn{
+	position: absolute;
+	font-size:0.7111rem;
+	color:#29c1ec;
+	top: 1.111rem;
+	right: 0.5556rem;
+	text-decoration: underline;
+}
+.ui-container  .contain-part div.registMooStore_form input.textInput{
+	background:#fafafa;
+	border:0.022rem solid #dddddd;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	font-size: 0.711rem;
+	color: #999999;
+	text-indent: 0.533rem;
+}
+.ui-container  .contain-part div.registMooStore_form a.formBtn{
+	display: inline-block;
+	text-align: center;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	line-height: 1.911rem;
+	font-size: 0.711rem;
+	color:#ffffff;
+}
+.ui-container  .contain-part div.registMooStore_form input.phoneNumber{
+	margin-top: 1.7778rem;
+}
+.ui-container  .contain-part div.registMooStore_form input.Codenumber{
+	margin-top: 0.6667rem;
+}
+.ui-container  .contain-part div.registMooStore_form a.confirmBtn{
+	margin-top:1.7778rem;
+}
+.ui-container  .contain-part div.registMooStore_form a.cancelBtn{
+	display: inline-block;
+	text-align: center;
+	margin-top: 0.667rem;
+	border:0.044rem solid #29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.867rem;
+	line-height: 1.867rem;
+	font-size: 0.711rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-bottom: 1rem;
+}
+.ui-dialog div.btns button.loginBtn{
+	background:#29c1ec;
+	border-radius:8px;
+	width:100%;
+	height:1.778rem;
+	line-height: 1.778rem;
+	text-align: center;
+	font-size:0.6667rem;
+	color:#ffffff;
+	margin-top: 1rem;
+}
+.ui-dialog div.btns button.changeMobel{
+	border:2px solid #29c1ec;
+	border-radius:0.1778rem;
+	width:100%;
+	height:1.778rem;
+	line-height: 1.778rem;
+	text-align: center;
+	font-size:0.6667rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-top: 1rem;
+}
+.ui-dialog div.btns button.closeBtn{
+	border:2px solid #29c1ec;
+	border-radius:0.1778rem;
+	width:100%;
+	height:1.778rem;
+	line-height: 1.778rem;
+	text-align: center;
+	font-size:0.6667rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-top: 1rem;
+	margin-bottom: 0.889rem;
+}
+/* 设置 Moo store的支付密码 */
+.ui-container  .contain-part p.set_Moo_storePassword_title{
+	font-size:0.8rem;
+	color:#333333;
+	line-height:1rem;
+	text-align:center;
+	margin-top: 2.222rem;
+}
+.ui-container  .contain-part p.set_Moo_storePassword_account{
+	font-size:0.889rem;
+	color:#29c1ec;
+	text-align:center;
+	margin-top: 0.555rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form{
+	padding-right: 1.333rem;
+	padding-left: 1.333rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form input.textInput{
+	background:#fafafa;
+	border:0.022rem solid #dddddd;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	font-size: 0.711rem;
+	color: #999999;
+	text-indent: 0.533rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form a.formBtn{
+	display: inline-block;
+	text-align: center;
+	background:#29c1ec;
+	border-radius:0.133rem;
+	width:100%;
+	height:1.911rem;
+	line-height: 1.911rem;
+	font-size: 0.711rem;
+	color:#ffffff;
+	margin-bottom: 1rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form input.password{
+	margin-top: 1.7778rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form input.Codenumber{
+	margin-top: 0.6667rem;
+}
+.ui-container  .contain-part div.set_Moo_storePassword_form a.confirmBtn{
+	margin-top:1.7778rem;
+}
+
+/* cok 支付成功 */
+.ui-container  .contain-part p.payment_success_title{
+	font-size:0.889rem;
+	color:#333333;
+	line-height:1rem;
+	text-align:center;
+	margin-top: 2rem;
+}
+.ui-container  .contain-part p.payment_success_cok{
+	font-size:0.889rem;
+	color: #29c1ec;
+	line-height:1rem;
+	text-align:center;
+	margin-top: 0.778rem;
+}
+.ui-container  .contain-part  div.payment_success_itemGroup{
+	margin-top: 0.778rem;
+	font-size: 0.667rem;
+}
+.ui-container  .contain-part  div.payment_success_itemGroup div.item{
+	text-align: right;
+	color: #333333;
+}
+.ui-container  .contain-part  div.payment_success_itemGroup div.number{
+	text-align: left;
+	color: #29c1ec;
+}
+.ui-container  .contain-part  div.btnGroup{
+	text-align: center;
+}
+.ui-container  .contain-part  div.btnGroup a.backGameBtn{
+	display: inline-block;
+	text-align: center;
+	background:#29c1ec;
+	border-radius:0.1333rem;
+	width:13.333rem;
+	height:1.9556rem;
+	font-size:0.7111rem;
+	color:#ffffff;
+	line-height: 1.9556rem;
+	margin-top: 1.778rem;
+}
+.ui-container  .contain-part  div.btnGroup a.enterWalletBtn{
+	display: inline-block;
+	text-align: center;
+	background:#ffffff;
+	border:0.0444rem solid #29c1ec;
+	border-radius:0.1333rem;
+	width:13.2444rem;
+	height:1.8667rem;
+	font-size:0.7111rem;
+	color:#29c1ec;
+	line-height: 1.8667rem;
+	margin-top: 0.6667rem;
+	margin-bottom: 1rem;
+}
+/* 弹窗样式补充 */
+.accountRiskPop button.closeBtn{
+	border:0.0444rem solid #29c1ec;
+	border-radius:0.1778rem;
+	width:100%;
+	height:1.6889rem;
+	font-size:0.5778rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-top: 0.444rem;
+}
+.accountRiskPop button.haveAccountBtn{
+	border:2px solid #29c1ec;
+	border-radius:0.1778rem;
+	width:100%;
+	height:1.778rem;
+	line-height: 1.778rem;
+	text-align: center;
+	font-size:0.5778rem;
+	color:#29c1ec;
+	background: #ffffff;
+	margin-top:1rem;
+}
+.accountRiskPop div.btns{
+	margin-bottom: 0.889rem;
+}
+/*密码设置成功 */
+#backToGameBtn{
+	display: inline-block;
+	border:0.0444rem solid #29c1ec;
+	border-radius:0.1333rem;
+	width:13.2444rem;
+	height:1.8666rem;
+	background: #ffffff;
+	font-size: 0.7111rem;
+	color: #29c1ec;
+	line-height: 1.8666rem;
+	margin-top:2.222rem;
+	margin-bottom: 1rem;
+}

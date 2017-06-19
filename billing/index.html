@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>platform</title>
+        <link rel="stylesheet" href="css/frozen.css">
+        <link rel="stylesheet" href="css/style_pay.css">
+
+">
+    </head>
+    <body ontouchstart="">
+        <header class="ui-header ui-header-positive ui-border-b">
+            <h1>platform</h1>
+            <select name="" id="">
+            	<option value="">English</option>
+            </select>
+        </header>
+        <footer class="ui-footer">
+            <select class="countrySelect">
+            	
+            </select>
+            <a href="javascript:void(0)" class="contactUs">Contact Us</a>
+        </footer>
+        <section class="ui-container">
+            <div class="header">
+            	<i class='adminIcon'></i>
+            	<span class='userId'>Guest00921</span>
+            	<span class="userBalance">Balance: <i>20</i> USD</span>
+            </div>
+			<div class="contain-part">
+				<p class="itemPrice itemPrice-1">
+					<span>Item = USD <i class='price'>30.00</i></span>
+				</p>
+				<p class="itemPrice itemPrice-2">
+					<span>Top-up = min. USD <i class='price'>0</i></span>
+				</p>
+				<button class="userMooConBtn">Use Balance</button>
+				<p class="otherMethod">
+					<span>Other Payment Methods</span>
+				</p>
+				<div class="paymentKind">
+					<table class="ui-table ui-border">
+					    <tbody>
+						    <tr>
+						    	<td class='active' type-value="CARD">Top up Card</td>
+						    	<td type-value="SMS">SMS</td>
+						    	<td type-value="CREDIT_CARD">Credit card</td>
+						    </tr>
+						    <tr>
+						    	<td type-value="MEMBERS">Members</td>
+						    	<td type-value="PHONE_BILL">Phone Bill</td>
+						    	<td type-value="BANK">Bank</td>
+						    </tr>
+					    </tbody>
+					</table>
+					<div class="showMethod">
+						<ul class="ui-grid-trisect" id='payEvery'>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+        </section>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/frozen.js"></script>
+        <script src="config.js"></script>
+        <script>
+        	!(function(doc, win) {
+		        var docEle = doc.documentElement,
+		            evt = "onorientationchange" in window ? "orientationchange" : "resize",
+		            fn = function() {
+		                var width = docEle.clientWidth;
+		                width && (docEle.style.fontSize = 20 * (width / 320) + "px");
+		            };	
+		        //设计稿是720*1280的 所以本页面1rem=45px
+		        win.addEventListener(evt, fn, false);
+		        doc.addEventListener("DOMContentLoaded", fn, false);
+
+		    }(document, window));
+		    /*获取支付国家*/
+		    $.ajax({
+		    	url: root+'/web/billing/countries',
+		    	type: 'GET',
+		    	success:function(data){
+		    		var  countrys;
+		    		for(var i=0;i<data.length;i++){
+		    			var html='<option value="'+data[i].code+'">'+data[i].nameE+'</option>';
+		    			countrys+=html;	
+		    		}
+		    		$('select.countrySelect').html(countrys);
+		    		getPayment(data[0].code,'CARD')
+		    	}
+		    })
+
+		    /*根据国家 和渠道 获取支付方式*/
+		    $('table tr td').click(function(){
+		    	/*获取当前选择的国家code*/
+		    	var countryCode=$('select.countrySelect').val();
+		    	var thisType=$(this).attr('type-value');
+		    	$('table tr td').removeClass('active');
+		    	$(this).addClass('active');
+		    	getPayment(countryCode,thisType);
+		    });
+		    /*切换国家默认选择第一个支付渠道*/
+		     $('select.countrySelect').on("change",function(){
+		     	var countryCode=$(this).val();
+		     	$('table tr td').removeClass('active');
+		    	$('table tr td').eq(0).addClass('active');
+		     	getPayment(countryCode,'CARD')
+		     })
+		  	function getPayment(countrycode,curType){
+		  		$.ajax({
+			    	url: root+'/web/billing/country/payments?countryCode='+countrycode+'&type='+curType,
+			    	type: 'GET',
+			    	success:function(data){
+			    		var arrs='';
+			    		for(var i=0;i<data.length;i++){
+			    			var htmlsd= '<li>'+
+										'<img src='+data[i].imageUrl+' paymentCode='+data[i].paymentCode+' height="150" width="150" alt="">'+
+								     	'<p>'+data[i].nameE+'</p>'+
+								        '</li>';
+							arrs+=htmlsd
+			    		}
+			    		$('#payEvery').html(arrs)
+			    		 /*选择支付方式后  点击进行支付*/
+					    $('#payEvery li').click(function(){
+					    	var code=$(this).find('img').attr('paymentCode');
+					    	var  token=GetQueryString("token");
+					    	var sendData={
+					    		"countryCode":$('select.countrySelect').val(),
+					    		"paymentCode":code
+					    	}
+					    	$.ajax({
+						    	url: root+'/web/billing/payment/transaction?token='+token,
+						    	type: 'POST',
+						    	data:sendData,
+						    	success:function(data){
+						    		window.location.href=data.url
+						    		clickPayment(token)
+						    	}
+						    })
+						    // clickPayment(lastStyleSheetSet)
+					    });
+			    	}
+			    })
+		  	}
+		  	function clickPayment(ss){
+		  		js.doPolling(ss)
+		  	}
+		  	//获取浏览器地址的参数
+		  	function GetQueryString(name)
+			{
+			    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			    var r = window.location.search.substr(1).match(reg);
+			    if(r!=null)return  unescape(r[2]); return null;
+			}
+        </script>
+    </body>
+</html>

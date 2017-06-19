@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   		<base 'http://192.168.2.168:8080'/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>Pay Success</title>
+        <link rel="stylesheet" href="css/frozen.css">
+        <link rel="stylesheet" href="css/style_pay.css">
+
+">
+    </head>
+    <body ontouchstart="">
+        <header class="ui-header ui-header-positive ui-border-b">
+            <h1>platform</h1>
+            <select name="" id="">
+            	<option value="">English</option>
+            </select>
+        </header>
+        <footer class="ui-footer">
+            <a href="javascript:void(0)" class="contactUs">Contact Us</a>
+        </footer>
+        <section class="ui-container">
+            <div class="header">
+            	<i class='adminIcon'></i>
+            	<span class='userId'>Guest00921</span>
+            	<span class="userBalance">Balance: <i>20</i> USD</span>
+            </div>
+			<div class="contain-part">
+				<p class="payment_success_title">
+					<span>Payment Success!</span>
+				</p>
+				<p class="payment_success_cok">
+					<span>COK</span>
+				</p>
+				<div class="ui-row-flex ui-whitespace payment_success_itemGroup">
+				    <div class="ui-col item">Order number :&nbsp</div>
+				    <div class="ui-col number">1000000000001</div>
+				</div>
+				<div class="ui-row-flex ui-whitespace payment_success_itemGroup">
+				    <div class="ui-col item">Amount :&nbsp</div>
+				    <div class="ui-col number"> USD 30</div>
+				</div>
+				<div class="ui-row-flex ui-whitespace payment_success_itemGroup">
+				    <div class="ui-col item">Paid via :&nbsp</div>
+				    <div class="ui-col number"> MOL</div>
+				</div>
+				<div class="ui-row-flex ui-whitespace payment_success_itemGroup">
+				    <div class="ui-col item">Balace :&nbsp</div>
+				    <div class="ui-col number"> USD 10</div>
+				</div>
+				<div class="btnGroup">
+					<a href="javascript:void(0)" class="backGameBtn">Back to game</a>
+					
+				</div>
+			</div>
+        </section>
+        <!--code不正确 弹窗 -->
+        <div class="ui-dialog accountRiskPop">
+		    <div class="ui-dialog-cnt">
+		      	<header class="ui-dialog-hd ui-border-b">
+					<h3>Warning</h3>
+				</header>
+		        <div class="ui-dialog-bd">
+		            <div><span>Your account might pose a <i style="color:#29c1ec;">security <br/> risk</i>.</span></div>
+		            <div><span>We recommend binging a <i style="color:#29c1ec;">MOO Store account</i> for added security.</span></div>
+		        </div>
+		        <div class="btns">
+		        	<button type="button" class="loginBtn" style="font-size:0.5778rem;">Register a MOO Store account</button>
+		            <button type="button" class='haveAccountBtn'>I already have a MOO Store account</button>
+		            <button type="button"  class='closeBtn' data-role="button">Cancel</button>
+		        </div>
+		    </div>        
+		</div>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/frozen.js"></script>
+        <script>
+        	!(function(doc, win) {
+		        var docEle = doc.documentElement,
+		            evt = "onorientationchange" in window ? "orientationchange" : "resize",
+		            fn = function() {
+		                var width = docEle.clientWidth;
+		                width && (docEle.style.fontSize = 20 * (width / 320) + "px");
+		            };
+		        //设计稿是720*1280的 所以本页面1rem=45px
+		        win.addEventListener(evt, fn, false);
+		        doc.addEventListener("DOMContentLoaded", fn, false);
+
+		    }(document, window));
+			 /*弹窗提示
+			打开弹窗	$(".ui-dialog").dialog("show");
+			关闭弹窗    $(".ui-dialog").dialog("hide")
+		    */
+		 	// $(".accountRiskPop").dialog("show");
+		 	$(".backGameBtn").click(function(){
+		 		clickClose()
+		 	});
+		 	function clickClose(){
+		  		js.closeActivity()
+		  	}
+        </script>
+    </body>
+</html>
