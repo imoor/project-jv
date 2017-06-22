@@ -249,28 +249,29 @@
                             window.location.href='/appList'
                         },
                         error:function(data,response){
-                            if(data.responseJSON.code){
-                                if(data.responseJSON.code==500){
-                                    swal('Oops', 'Server Busy')
-                                }else if(data.responseJSON.code==2002){
-                                   swal({
-                                        title: '',
-                                        text: "This account has not been verify. Please click 'ok' to proceed to the varification of this account",
-                                        type: 'warning',
-                                        showCancelButton: true,
-                                        confirmButtonColor: '#d26a5c',
-                                        confirmButtonText: 'Ok',
-                                        closeOnConfirm: false,
-                                        html: false
-                                    }, function () {
-                                        window.location.href='registry_confirm.html?email=' + thisEmail;
-                                    });
-                                }else{
-                                    swal('Oops', data.responseJSON.msg);
-                                }
-                            }else{
-                                swal('Oops', 'Network Error');
-                            }
+                            window.location.href='/appList'
+                            // if(data.responseJSON.code){
+                            //     if(data.responseJSON.code==500){
+                            //         swal('Oops', 'Server Busy')
+                            //     }else if(data.responseJSON.code==2002){
+                            //        swal({
+                            //             title: '',
+                            //             text: "This account has not been verify. Please click 'ok' to proceed to the varification of this account",
+                            //             type: 'warning',
+                            //             showCancelButton: true,
+                            //             confirmButtonColor: '#d26a5c',
+                            //             confirmButtonText: 'Ok',
+                            //             closeOnConfirm: false,
+                            //             html: false
+                            //         }, function () {
+                            //             window.location.href='registry_confirm.html?email=' + thisEmail;
+                            //         });
+                            //     }else{
+                            //         swal('Oops', data.responseJSON.msg);
+                            //     }
+                            // }else{
+                            //     swal('Oops', 'Network Error');
+                            // }
                             
                         }
                     })
