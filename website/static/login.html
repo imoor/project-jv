@@ -118,7 +118,7 @@
                                     <div class="form-group">
                                        <div class="col-xs-12 text-right">
                                            <div class="font-s13 text-right push-5-t">
-                                            <a href="/index.html#/findPassword">Forgot Password?</a>
+                                            <a href="../findPassword">Forgot Password?</a>
                                         </div>
                                        </div>
                                     </div>
@@ -137,7 +137,7 @@
                     <section class="content content-full content-boxed">
                         <div class="push-20-t push-20 text-center">
                             <h3 class="h4 push-20 visibility-hidden" data-toggle="appear">Don’t have an account?</h3>
-                            <a class="btn btn-rounded btn-noborder btn-lg btn-success visibility-hidden" data-toggle="appear" data-class="animated bounceIn" href="../index.html#/registryEntry">Sign Up Today</a>
+                            <a class="btn btn-rounded btn-noborder btn-lg btn-success visibility-hidden" data-toggle="appear" data-class="animated bounceIn" href="../registryEntry">Sign Up Today</a>
                         </div>
                     </section>
                 </div>
@@ -246,10 +246,10 @@
                         crossDomain:true,
                         data:$("#loginForm").serialize(),
                         success:function(data){
-                            window.location.href='/appList'
+                            window.location.href='../appList'
                         },
                         error:function(data,response){
-                            window.location.href='/appList'
+                            window.location.href='../appList'
                             // if(data.responseJSON.code){
                             //     if(data.responseJSON.code==500){
                             //         swal('Oops', 'Server Busy')
