@@ -1338,7 +1338,5 @@ var OneUI = App;
 
 // Initialize app when page loads
 jQuery(function(){
-    if (typeof angular == 'undefined') {
-        App.init();
-    }
+    App.init();
 });

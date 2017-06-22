@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+
+        <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+       <!--  <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/static/img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/static/img/favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="/static/img/favicons/favicon-192x192.png" sizes="192x192"> -->
+
+        <!-- <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-touch-icon-180x180.png"> -->
+     
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" href="assets/js/plugins/sweetalert/sweetalert.min.css">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+        <style>
+            .carousel-inner .item{
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 16px;
+                color: #333;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-container">
+            <main id="main-container">
+                <div class="bg-primary-dark">
+                    <section class="content-full overflow-hidden">
+                        <div id="carousel-example-generic" class="carousel slide visibility-hidden" data-ride="carousel"  data-toggle="appear" data-class="animated fadeInUp">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="assets/img/my/login/pic1.jpg"  class="img-responsive"  alt="...">
+                                    <div class="carousel-caption"  data-toggle="appear" data-class="animated fadeInDown">
+                                        <h3>REACH OUT TO MORE THAN<br/>100 MILLION GAMERS IN ASIA</h3>
+                                        <p>6 territories; 100 million gamers<br/>You develop the games; We bring them further</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/my/login/pic2.jpg"  class="img-responsive" alt="...">
+                                    <div class="carousel-caption"  data-toggle="appear" data-class="animated fadeInDown">
+                                        <h3>PUBLISH YOUR GAME</h3>
+                                        <p>Integrate our code, build a new APK, and submit<br/>it to GameJV Platform</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/my/login/pic3.jpg"  class="img-responsive" alt="...">
+                                    <div class="carousel-caption"  data-toggle="appear" data-class="animated fadeInDown">
+                                        <h3>DEVELOPER INSIGHTS</h3>
+                                        <p>Find out how you can find success in Southeast Asia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="topbar hidden-xs" style="position:absolute;top:35px;width:100%;">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <img src="assets/img/my/login/logo.png" width="150" alt="">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a class="btn btn-minw btn-rounded btn-success" data-toggle="appear" data-class="animated bounceIn"  type="button" href="#tigger" style="margin-right:60px;">Login</a>
+                                <a class="btn btn-minw btn-rounded btn-danger" data-toggle="appear" data-class="animated bounceIn"  type="button" href="/index.html#/registryEntry">registry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white" id="tigger">
+                    <section class="content content-boxed">
+                        <div class="row items-push push-50-t push-30">
+                            <div class="col-md-6 col-md-offset-3">
+                                <form class="js-validation-register form-horizontal" id="loginForm" method="post">
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <div class="form-material form-material-primary">
+                                                <input class="form-control" type="email" id="name" name="name" placeholder="example@developer.com">
+                                                <label for="name">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <div class="form-material form-material-primary">
+                                                <input class="form-control" type="password" id="password" name="password" placeholder="Your password">
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="col-xs-12 text-right">
+                                           <div class="font-s13 text-right push-5-t">
+                                            <a href="find_password.html">Forgot Password?</a>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                        <button  class="btn btn-block btn-primary" type="submit"><i class="fa fa-arrow-right pull-right"></i> Log in</button>
+                                           <!--  <a class="btn btn-block btn-primary" type="submit" id="loginBtn"  href="javascript:void(0)"><i class="fa fa-arrow-right pull-right"></i> Log in</a> -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="bg-gray-lighter">
+                    <section class="content content-full content-boxed">
+                        <div class="push-20-t push-20 text-center">
+                            <h3 class="h4 push-20 visibility-hidden" data-toggle="appear">Don’t have an account?</h3>
+                            <a class="btn btn-rounded btn-noborder btn-lg btn-success visibility-hidden" data-toggle="appear" data-class="animated bounceIn" href="/index.html#/registryEntry">Sign Up Today</a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer id="page-footer" class="bg-white">
+                <!-- <div class="content content-boxed">
+                    <div class="font-s12 push-20 clearfix">
+                        <hr class="remove-margin-t">
+                        <div class="pull-right">
+                           Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+                       </div>
+                        <div class="pull-left">
+                            <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank">GameJV</a><span class="js-year-copy"></span>
+                        </div>
+                    </div>
+                </div> -->
+            </footer>
+        </div>
+         <!-- 模态框 -->
+        <div class="modal fade" id="modal-fromright" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-fromright">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">Terms &amp; Conditions</h3>
+                        </div>
+                        <div class="block-content">
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal"><i class="fa fa-check"></i> Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app2.js"></script>
+        <script src="assets/js/plugins/sweetalert/sweetalert.min.js"></script>
+        <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <script src="api.js"></script>
+        <script>
+            $(function () {
+                App.initHelpers('appear');      
+               
+            });
+            var root=rootApi;
+            console.log(root)
+// 注册验证提交
+            jQuery('.js-validation-register').validate({
+                errorClass: 'help-block text-right animated fadeInDown',
+                errorElement: 'div',
+                errorPlacement: function(error, e) {
+                    jQuery(e).parents('.form-group > div').append(error);
+                },
+                highlight: function(e) {
+                    jQuery(e).closest('.form-group').removeClass('has-error').addClass('has-error');
+                    jQuery(e).closest('.help-block').remove();
+                },
+                success: function(e) {
+                    jQuery(e).closest('.form-group').removeClass('has-error');
+                    jQuery(e).closest('.help-block').remove();
+                },
+                rules: {
+                    'name':{
+                        required: true,
+                        isEmail:true
+                    },
+                    'password':{
+                        required:true,
+                        isPassword:true
+                    }
+
+                },
+                messages: {
+                    'name': {
+                        required: 'Please enter a valid email format'
+                    },
+                    'password': {
+                        required: 'Please provide a password'
+                    }
+                },
+                submitHandler:function(form){
+                    /*当前登录的邮箱*/
+                    var thisEmail=$('#name').val();
+                    $.ajax({
+                        url:root+'/developer/login',
+                        type:'POST',
+                        xhrFields:{
+                            withCredentials:true
+                        },
+                        crossDomain:true,
+                        data:$("#loginForm").serialize(),
+                        success:function(data){
+                            window.location.href='/index.html#/appList'
+                        },
+                        error:function(data,response){
+                            if(data.responseJSON.code){
+                                if(data.responseJSON.code==500){
+                                    swal('Oops', 'Server Busy')
+                                }else if(data.responseJSON.code==2002){
+                                   swal({
+                                        title: '',
+                                        text: "This account has not been verify. Please click 'ok' to proceed to the varification of this account",
+                                        type: 'warning',
+                                        showCancelButton: true,
+                                        confirmButtonColor: '#d26a5c',
+                                        confirmButtonText: 'Ok',
+                                        closeOnConfirm: false,
+                                        html: false
+                                    }, function () {
+                                        window.location.href='assets/registry_confirm.html?email=' + thisEmail;
+                                    });
+                                }else{
+                                    swal('Oops', data.responseJSON.msg);
+                                }
+                            }else{
+                                swal('Oops', 'Network Error');
+                            }
+                            
+                        }
+                    })
+                },
+            });
+            // 校验邮箱格式、
+            jQuery.validator.addMethod("isEmail", function(value, element) {   
+                var tel =/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+                return this.optional(element) || (tel.test(value));
+            }, "Please enter a valid email format");
+            // 校验密码格式（6-16个字符）至少一个数字
+            jQuery.validator.addMethod("isPassword", function(value, element) {   
+                var tel =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+                return this.optional(element) || (tel.test(value));
+            }, "6-16 chars , at least 1 numberic.");
+            
+            // 校验电话号码为纯数字
+            jQuery.validator.addMethod("isPhone", function(value, element) {   
+                var tel =/^[+]?[0-9|\ ]*$/;
+                return this.optional(element) || (tel.test(value));
+            }, "please enter only number");
+        </script>
+    </body>
+</html>
