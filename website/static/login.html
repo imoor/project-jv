@@ -89,7 +89,7 @@
                             </div>
                             <div class="col-md-6 text-center">
                                 <a class="btn btn-minw btn-rounded btn-success" data-toggle="appear" data-class="animated bounceIn"  type="button" href="#tigger" style="margin-right:60px;">Login</a>
-                                <a class="btn btn-minw btn-rounded btn-danger" data-toggle="appear" data-class="animated bounceIn"  type="button" href="/website/#/registryEntry">registry</a>
+                                <a class="btn btn-minw btn-rounded btn-danger" data-toggle="appear" data-class="animated bounceIn"  type="button" href="/website/index.html  index.html#/registryEntry">registry</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                                     <div class="form-group">
                                        <div class="col-xs-12 text-right">
                                            <div class="font-s13 text-right push-5-t">
-                                            <a href="/website/#/findPassword">Forgot Password?</a>
+                                            <a href="/website/index.html  #/findPassword">Forgot Password?</a>
                                         </div>
                                        </div>
                                     </div>
@@ -137,7 +137,7 @@
                     <section class="content content-full content-boxed">
                         <div class="push-20-t push-20 text-center">
                             <h3 class="h4 push-20 visibility-hidden" data-toggle="appear">Don’t have an account?</h3>
-                            <a class="btn btn-rounded btn-noborder btn-lg btn-success visibility-hidden" data-toggle="appear" data-class="animated bounceIn" href="/website/#/registryEntry">Sign Up Today</a>
+                            <a class="btn btn-rounded btn-noborder btn-lg btn-success visibility-hidden" data-toggle="appear" data-class="animated bounceIn" href="/website/index.htmlindex.html#/registryEntry">Sign Up Today</a>
                         </div>
                     </section>
                 </div>
@@ -246,7 +246,7 @@
                         crossDomain:true,
                         data:$("#loginForm").serialize(),
                         success:function(data){
-                            window.location.href='/website/index.html#/appList'
+                            window.location.href='/website/index.htmlindex.html#/appList'
                         },
                         error:function(data,response){
                             // window.location.href='website//appList'
@@ -264,7 +264,7 @@
                                         closeOnConfirm: false,
                                         html: false
                                     }, function () {
-                                        window.location.href='registry_confirm.html?email=' + thisEmail;
+                                        window.location.href='/website/index.html#/registryConfirm?email=' + thisEmail;
                                     });
                                 }else{
                                     swal('Oops', data.responseJSON.msg);
