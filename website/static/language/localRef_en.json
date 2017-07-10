@@ -84,6 +84,8 @@
 	"versionDetail_packageList_table_4":"Package Size",
 	"setPay_title":"Set Payment",
 	"setPay_area":"Area",
+	"setPay_area_select1":"Payment channel",
+	"setPay_area_select2":"App store",
 	"setPay_channel":"Game Channel",
 	"setPay_btn_cancel":"Cancel",
 	"setPay_btn_submit":"Next",

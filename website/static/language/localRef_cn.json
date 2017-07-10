@@ -84,6 +84,8 @@
 	"versionDetail_packageList_table_4":"包大小",
 	"setPay_title":"设置支付渠道",
 	"setPay_area":"选择区域",
+	"setPay_area_select1":"Payment channel",
+	"setPay_area_select2":"App store",
 	"setPay_channel":"选择支付平台",
 	"setPay_btn_cancel":"取消",
 	"setPay_btn_submit":"下一步",
