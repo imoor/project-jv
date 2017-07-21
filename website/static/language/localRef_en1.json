@@ -29,7 +29,7 @@
             {"content":"Choose ESA / China Area","url":"/setPay"},
             {"content":"Download & integrating SDK","url":"/downloadSdk"},
             {"content":"Version Manage and Download APK","url":"/versionPackage"},
-            {"content":"Submit to Appstore","url":"/submitVersion"},
+            {"content":"Submit to Appstore","url":""},
             {"content":"Status of Review","url":"/agreementVersion"}
 		]
 	},
