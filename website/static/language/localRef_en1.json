@@ -1,0 +1,217 @@
+{	"common":{
+		"cancelBtn":"Cancel",
+		"nextBtn":"Next",
+		"confirmBtn":"Confirm",
+		"noData":"No Data",
+		"submitBtn":"Submit"
+	},
+	"head":{
+		"head_account":"Account",
+		"head_password":"Reset Password",
+		"head_logout":"Logout"
+	},
+	"side":{
+		"side_app":"App Management",
+		"side_data":"Data Analysis",
+		"side_data_login":"Login",
+		"side_data_registry":"Login",
+		"side_download":"Downloads",
+		"side_download_doc":"Document",
+		"side_download_package":"Packages",
+		"side_POSM":"POSM",
+		"side_POSM_splash":"Splash",
+		"side_POSM_ad":"AD"
+	},
+	"step":{
+		"gameGroup":[
+			{"content":"Create App","url":""},
+            {"content":"New Channel","url":""},
+            {"content":"Choose ESA / China Area","url":"/setPay"},
+            {"content":"Download & integrating SDK","url":"/downloadSdk"},
+            {"content":"Version Manage and Download APK","url":"/versionPackage"},
+            {"content":"Submit to Appstore","url":"/submitVersion"},
+            {"content":"Status of Review","url":"/agreementVersion"}
+		]
+	},
+	"appList":{
+		"appList_head":"App List",
+		"appList_head_tip_1":"You can review details of your app and manager versions",
+		"appList_head_tip_2":"Choose the App you’d like to check on and it’s status will be displayed below.",
+		"appList_head_right_2":"App List",
+		"appList_content_title":"All Of Your Apps",
+		"appList_add_btn":"Add App",
+		"appList_table_name":"App Name",
+		"appList_table_nature":"App Nature",
+		"appList_table_uniquekey":"App Uniquekey",
+		"appList_table_detail":"Detail",
+		"appList_table_edit":"Edit",
+		"appList_table_channel":"Channel Manage",
+		"appList_tip_line1":"Thank you",
+		"appList_tip_line2":"Steps away from creating your first app..",
+		"appList_tip_line3":"Based on your level of experience, what would you like to start with first?",
+		"appList_tip_btn1":"Tutorial",
+		"appList_tip_btn2":"Create App"
+	},
+	"appKind":{
+		"appKind_game":"Game",
+		"appKind_app":"Application",
+		"appKind_tip":"Please choose what type of your product"
+	},
+	"addGame":{
+		"addGame_head":"Add Game",
+		"addGame_head_tip":"Please provide the following information to create your new App",
+		"addGame_con_title":"App Information",
+		"addGame_con_name":"App Name",
+		"addGame_con_name_desc":"App English Title,if App Title is in other language",
+		"addGame_con_descript":"App Description",
+		"addGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
+		"addGame_con_type":"Select Game Type",
+		"addGame_con_cat":"Select App Category",
+		"addGame_btn_cancel":"Cancel",
+		"addGame_btn_submit":"Next"
+	},
+	"editGame":{
+		"editGame_head":"Edit Game",
+		"editGame_con_title":"App Information",
+		"editGame_con_name":"App Name",
+		"editGame_con_name_desc":"App English Title,if App Title is in other language",
+		"editGame_con_descript":"App Description",
+		"editGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
+		"editGame_con_type":"Select Game Type",
+		"editGame_con_cat":"Select App Category",
+		"editGame_btn_cancel":"Cancel",
+		"editGame_btn_submit":"Next"
+	},
+	"appDetail":{
+		"appDetail_head":"App Detail",
+		"appDetail_head_tip1":"Here are the details of your App !",
+		"appDetail_head_tip2":"You can review details of your app and manager versions",
+		"appDetail_con_title":"App information",
+		"appDetail_con_name":"App Title",
+		"appDetail_con_type":"Game Type",
+		"appDetail_con_key":"Public Key",
+		"appDetail_con_des":"Description",
+		"appDetail_con_cats":"Categories",
+		"appDetail_channel_list_title":"Channel List",
+		"appDetail_channel_list_btn":"Create Channel",
+		"appDetail_channel_table_name":"Channel Name",
+		"appDetail_channel_table_detail":"Channel Detail"
+	},
+	"addChannel":{
+		"addChannel_head":"Add Channel",
+		"addChannel_con_title":"Channel Information",
+		"addChannel_con_name":"Channel Name",
+		"addChannel_con_des":"Channel Description",
+		"addChannel_btn_cancel":"Cancel",
+		"addChannel_btn_submit":"Next"
+	},
+	"editChannel":{
+		"editChannel_head":"Edit Channel",
+		"editChannel_con_title":"Channel Information",
+		"editChannel_con_name":"Channel Name",
+		"editChannel_con_des":"Channel Description"
+	},
+	"channelDetail":{
+		"channelDetail_head":"Channel Detail",
+		"channelDetail_nextBtn":"Next Step",
+		"channelDetail_con_title":"Channel Information",
+		"channelDetail_con_name":"Channel Name",
+		"channelDetail_con_descript":"Channel Description",
+		"channelDetail_versionList_title":"Version List",
+		"channelDetail_versionList_btn":"Creat New Version",
+		"channelDetail_versionList_table_1":"Package Name",
+		"channelDetail_versionList_table_2":"Package Code",
+		"channelDetail_versionList_table_3":"Package Url",
+		"channelDetail_versionList_table_4":"Package Size"
+	},
+	"setPay":{
+		"setPay_head":"Set Payment",
+		"setPay_area":"Area",
+		"setPay_area_select1":"Payment channel",
+		"setPay_area_select2":"App store",
+		"setPay_channel":"Game Channel",
+		"setPay_keyList_tit":"Key List",
+		"setPay_keyList_table_1":"Key Name",
+		"setPay_keyList_table_2":"Key Value"
+	},
+	"download":{
+		"download_head":"Documents",
+		"download_con_title":"Downloads",
+		"download_con_line1":"Congratulations,you have successfully created your app .",
+		"download_con_line2":"Next step , you can download our Software Development Kit (SDK).",
+		"download_con_table_1":"Android",
+		"download_con_table_2":"Unity"
+	},
+	"package":{
+		"package_head":"Version Manager",
+		"package_con_up":"Upload APK",
+		"package_con_name":"APK Name",
+		"package_con_versionDes":"Version Description"
+	},
+	"submit":{
+		"submit_head":"Submit Version",
+		"submit_icon":"App Icon",
+		"submit_icon_tip":"must be consistent with App software pack",
+		"submit_icon_size":"Icon Size",
+		"submit_icon_resolution":"Resolution",
+		"submit_icon_format":"Format",
+		"submit_screen":"App screenshot",
+		"submit_screen_tip":"Please upload 4 to 5 promotional assets",
+		"submit_screen_size":"Pic Size",
+		"submit_screen_format":"Format",
+		"submit_screen_storage":"Storage size"
+	},
+	"splashList":{
+		"splashList_head":"Splash List",
+		"splashList_con_btn":"Add Splash"
+	},
+	"splashAdd":{
+		"splashAdd_head":"Splash Add ",
+		"splashAdd_con_title":"App Information",
+		"splashAdd_con_screen":"App screenshot",
+		"splashAdd_con_screen_tip":"Please upload 1 assets",
+		"splashAdd_con_screen_size":"Pic Size",
+		"splashAdd_con_screen_format":"Format",
+		"splashAdd_con_screen_storage":"Storage size",
+		"splashAdd_con_game":"Select Game",
+		"splashAdd_con_channel":"Channel of Game",
+		"splashAdd_con_time":"Select Time",
+		"splashAdd_con_order":"Select The Order",
+		"splashAdd_btn_cancel":"Cancel",
+		"splashAdd_btn_submit":"Submit"
+	},
+	"adList":{
+		"adList_head":"Ad List",
+		"adList_con_btn": "Add New",
+		"adList_table_1": "Pic",
+		"adList_table_2": "Advertising NO.",
+		"adList_table_3": "Advertising Name",
+		"adList_table_4": "Advertising Channel",
+		"adList_table_5": "URL",
+		"adList_table_6": "date",
+		"adList_table_7": "State",
+		"adList_table_8": "Operate"
+	},
+	"adAdd":{
+		"adAdd_head":"Add Advertisting",
+		"adAdd_con_upload":"Upload",
+		"adAdd_con_name":"Advertising Name",
+		"adAdd_con_second":"Second",
+		"adAdd_con_url":"URL",
+		"adAdd_con_code":"Unique Code",
+		"adAdd_con_gameName":"Game Name",
+		"adAdd_con_gameVersion":"Channel",
+		"adAdd_con_data":"Data"
+	},
+	"adEdit":{
+		"adEdit_head":"Edit Advertisting",
+		"adEdit_con_upload":"Img",
+		"adEdit_con_name":"Advertising Name",
+		"adEdit_con_second":"Second",
+		"adEdit_con_url":"URL",
+		"adEdit_con_code":"Unique Code",
+		"adEdit_con_gameName":"Game Name",
+		"adEdit_con_gameVersion":"Channel",
+		"adEdit_con_data":"Data"
+	}
+}

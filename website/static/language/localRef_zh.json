@@ -1,0 +1,207 @@
+{	"common":{
+		"cancelBtn":"取消",
+		"nextBtn":"下一步",
+		"confirmBtn":"确认",
+		"noData":"暂无数据",
+		"submitBtn":"提交"
+	},
+	"head":{
+		"head_account":"用户",
+		"head_password":"修改密码",
+		"head_logout":"注销"
+	},
+	"side":{
+		"side_app":"App管理",
+		"side_data":"数据分析",
+		"side_data_login":"登录数据",
+		"side_data_registry":"注册数据",
+		"side_download":"下载",
+		"side_download_doc":"文档下载",
+		"side_download_package":"包下载",
+		"side_POSM":"POSM",
+		"side_POSM_splash":"闪屏",
+		"side_POSM_ad":"广告"
+	},
+	"step":{
+		"gameGroup":[
+			{"content":"创建App","url":""},
+            {"content":"New Channel","url":""},
+            {"content":"选择 ESA / China Area","url":"/setPay"},
+            {"content":"下载SDK","url":"/downloadSdk"},
+            {"content":"APK下载及版本管理","url":"/versionPackage"},
+            {"content":"提交到store","url":"/submitVersion"},
+            {"content":"状态","url":"/agreementVersion"}
+		]
+	},
+	"appList":{
+		"appList_head":"App 列表",
+		"appList_head_tip_1":"您可以查看所有您在GameJV平台注册的应用的状态",
+		"appList_head_tip_2":"点击选择一个应用，您可以查看它的详细信息",
+		"appList_content_title":"所有App",
+		"appList_add_btn":"添加App",
+		"appList_table_name":"App 名称",
+		"appList_table_nature":"App 类型",
+		"appList_table_uniquekey":"App 唯一key",
+		"appList_table_detail":"详情",
+		"appList_table_edit":"编辑",
+		"appList_table_channel":"Channel管理",
+		"appList_tip_line1":"非常感谢您",
+		"appList_tip_line2":"所有的步骤都从创建app开始",
+		"appList_tip_line3":"根据您的经验，您想先从什么开始呢？",
+		"appList_tip_btn1":"引导",
+		"appList_tip_btn2":"创建 App"
+	},
+	"appKind":{
+		"appKind_game":"游戏",
+		"appKind_app":"应用",
+		"appKind_tip":"请选择您要创建产品的类型"
+	},
+	"addGame":{
+		"addGame_head":" 创建游戏",
+		"addGame_head_tip":"请提供以下信息创建您的新App",
+		"addGame_con_title":"App 信息",
+		"addGame_con_name":"App 名称",
+		"addGame_con_name_desc":"App Title,if App Title is in other language",
+		"addGame_con_descript":"App 描述",
+		"addGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
+		"addGame_con_type":"选择游戏类型",
+		"addGame_con_cat":"选择游戏种类"
+	},
+	"editGame":{
+		"editGame_head":"编辑游戏",
+		"editGame_con_title":"App 信息",
+		"editGame_con_name":"App 名称",
+		"editGame_con_name_desc":"App English Title,if App Title is in other language",
+		"editGame_con_descript":"App 描述",
+		"editGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
+		"editGame_con_type":"选择游戏类型",
+		"editGame_con_cat":"选择游戏种类"
+	},
+	"appDetail":{
+		"appDetail_head":"App 详情",
+		"appDetail_head_tip1":"您可查看当前App的详情",
+		"appDetail_head_tip2":"您也可为当前App创建新版本",
+		"appDetail_con_title":"App 信息",
+		"appDetail_con_name":"App 名称",
+		"appDetail_con_type":"游戏类型",
+		"appDetail_con_key":"密匙",
+		"appDetail_con_des":"描述",
+		"appDetail_con_cats":"种类",
+		"appDetail_channel_list_title":"Channel 列表",
+		"appDetail_channel_list_btn":"创建 Channel",
+		"appDetail_channel_table_name":"Channel 名称",
+		"appDetail_channel_table_detail":"Channel 详情"
+	},
+	"addChannel":{
+		"addChannel_head":"创建 Channel",
+		"addChannel_con_title":"Channel 信息",
+		"addChannel_con_name":"Channel 名称",
+		"addChannel_con_des":"Channel 描述"
+	},
+	"editChannel":{
+		"editChannel_head":"编辑 Channel",
+		"editChannel_con_title":"Channel 信息",
+		"editChannel_con_name":"Channel 名称",
+		"editChannel_con_des":"Channel 描述"
+	},
+	"channelDetail":{
+		"channelDetail_head":"Channel 详情",
+		"channelDetail_con_title":"Channel 信息",
+		"channelDetail_con_name":"Channel 名称",
+		"channelDetail_con_descript":"Channel 描述",
+		"channelDetail_versionList_title":"版本列表",
+		"channelDetail_versionList_btn":"创建新版本",
+		"channelDetail_versionList_table_1":"包名称",
+		"channelDetail_versionList_table_2":"包Code",
+		"channelDetail_versionList_table_3":"包地址",
+		"channelDetail_versionList_table_4":"包大小"
+	},
+	"setPay":{
+		"setPay_head":"设置支付方式",
+		"setPay_area":"区域",
+		"setPay_area_select1":"支付渠道",
+		"setPay_area_select2":"应用商店",
+		"setPay_channel":"游戏Channel",
+		"setPay_keyList_tit":"Key 列表",
+		"setPay_keyList_table_1":"Key名称",
+		"setPay_keyList_table_2":"Key值"
+	},
+	"download":{
+		"download_head":"文档",
+		"download_con_title":"下载",
+		"download_con_line1":"恭喜您已成功创建App",
+		"download_con_line2":"接下来，您可以下载我们的SDK文档了",
+		"download_con_table_1":"Android",
+		"download_con_table_2":"Unity"
+	},
+	"package":{
+		"package_head":"版本管理",
+		"package_con_up":"上传APK",
+		"package_con_name":"APK 名称",
+		"package_con_versionDes":"版本描述"
+	},
+	"submit":{
+		"submit_head":"提交版本",
+		"submit_icon":"App Icon",
+		"submit_icon_tip":"must be consistent with App software pack",
+		"submit_icon_size":"Icon Size",
+		"submit_icon_resolution":"Resolution",
+		"submit_icon_format":"Format",
+		"submit_screen":"App 截屏",
+		"submit_screen_tip":"Please upload 4 to 5 promotional assets",
+		"submit_screen_size":"Pic Size",
+		"submit_screen_format":"Format",
+		"submit_screen_storage":"Storage size"
+	},
+	"splashList":{
+		"splashList_head":"闪屏列表",
+		"splashList_con_btn":"添加闪屏"
+	},
+	"splashAdd":{
+		"splashAdd_head":"添加闪屏",
+		"splashAdd_con_title":"闪屏信息",
+		"splashAdd_con_screen":"闪屏图片",
+		"splashAdd_con_screen_tip":"请上传一张图",
+		"splashAdd_con_screen_size":"Pic Size",
+		"splashAdd_con_screen_format":"Format",
+		"splashAdd_con_screen_storage":"Storage size",
+		"splashAdd_con_game":"选择游戏",
+		"splashAdd_con_channel":"选择游戏channel",
+		"splashAdd_con_time":"选择时间",
+		"splashAdd_con_order":"选择顺序"
+	},
+	"adList":{
+		"adList_head":"广告列表",
+		"adList_con_btn": "添加广告",
+		"adList_table_1": "图片",
+		"adList_table_2": "广告 NO.",
+		"adList_table_3": "广告 名称",
+		"adList_table_4": "广告 Channel",
+		"adList_table_5": "地址",
+		"adList_table_6": "日期",
+		"adList_table_7": "状态",
+		"adList_table_8": "操作"
+	},
+	"adAdd":{
+		"adAdd_head":"添加广告",
+		"adAdd_con_upload":"上传",
+		"adAdd_con_name":"广告名称",
+		"adAdd_con_second":"秒数",
+		"adAdd_con_url":"地址",
+		"adAdd_con_code":"唯一Code",
+		"adAdd_con_gameName":"游戏名",
+		"adAdd_con_gameVersion":"Channel",
+		"adAdd_con_data":"时间"
+	},
+	"adEdit":{
+		"adEdit_head":"编辑广告",
+		"adEdit_con_upload":"图片",
+		"adEdit_con_name":"广告名",
+		"adEdit_con_second":"秒数",
+		"adEdit_con_url":"地址",
+		"adEdit_con_code":"唯一Code",
+		"adEdit_con_gameName":"游戏名",
+		"adEdit_con_gameVersion":"Channel",
+		"adEdit_con_data":"日期"
+	}
+}
