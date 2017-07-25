@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Registry Company</title>
+
+        <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        
+        <link rel="stylesheet" href="assets/js/plugins/sweetalert/sweetalert.min.css">
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Register Content -->
+        <div class="bg-white pulldown">
+            <div class="content content-boxed overflow-hidden">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                        <div class="push-30-t push-20 animated fadeIn">
+                            <!-- Register Title -->
+                            <div class="text-center">
+                                <!-- <i class="fa fa-2x fa-circle-o-notch text-primary"></i> -->
+                                <h1 class="h3 push-10-t">Create Company Account</h1>
+                            </div>
+                            <form class="js-validation-register form-horizontal push-50-t push-50" id="registForm" method="post">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="email" id="loginName" name="loginName" placeholder="awesome@developer.com">
+                                            <label for="loginName">Developer Name (E-mail) <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="password" id="loginPassword" name="loginPassword" placeholder="6-16 chars, at least 1 numberic. eg. abc123">
+                                            <label for="loginPassword">Password <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  data-toggle="popover" data-placement="top" data-content="16 chars,at least 1 numberal" -->
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="password" id="loginPassword2" name="loginPassword2" placeholder="Please enter the same password as above">
+                                            <label for="loginPassword2">Confirm Password <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="text" id="companyName" name="companyName" placeholder="What do you call your company ?">
+                                            <label for="companyName">Company Name <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <select class="form-control valid" id="country" name="country">
+
+                                            </select>
+                                            <label for="country">Country </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="text" id="taxNumber" name="taxNumber" placeholder="Enter Company Tax No.">
+                                            <label for="taxNumber">Company Tax No.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <textarea class="form-control" id="address" name="address" rows="1" placeholder="Company Address" style="resize:none;"></textarea>
+                                            <label for="address">Company Address <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <textarea class="form-control" id="billingAddress" name="billingAddress" rows="1" placeholder="Enter your Billing Address" style="resize:none;"></textarea>
+                                            <label for="billingAddress">Billing Address</label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material">
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <div class="form-material">
+                                                        <input class="form-control text-center" id="contactNumber" name="contactNumber" disabled="" placeholder="+86" type="text" value="+1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-10" style="padding-left:0;">
+                                                    <div class="form-material">
+                                                        <input class="form-control" type="text" id="telephone" name="telephone" placeholder="Phone number. Please enter only number.">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="contactNumber">Contact <span class="text-danger">*</span></label>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-xs-10">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="text" id="telephone" name="telephone" placeholder="Enter Contact Number">
+                                            <label for="telephone"></label>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="form-group" id="invitationCode_if">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success">
+                                            <input class="form-control" type="text" id="invitationCode" name="invitationCode" placeholder="Enter your exclusive promo code.">
+                                            <label for="invitationCode">Elites Developer Code</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <label class="css-input switch switch-sm switch-success" id="labelClick">
+                                            <input type="checkbox" id="register-terms" name="register-terms" checked><span></span> I agree with <a href="#" data-toggle="modal" data-target="#modal-terms_terms">View Terms</a> &amp; <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-terms_condition">Conditions</a>
+                                        </label>
+                                    </div>
+                                    <!-- <div class="col-xs-5 col-sm-4">
+                                        <div class="font-s13 text-right push-5-t">
+                                            <a href="#" data-toggle="modal" data-target="#modal-terms_terms">View Terms</a>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                        <input type="submit" class="btn btn-sm btn-block btn-success" id="submitFormBtn" value="Create Account">
+                                       <!--  <a class="btn btn-sm btn-block btn-success" type="submit" id='submitFormBtn'>Create Account</a> -->
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- END Register Form -->
+                            <div class="text-center push-50-t">
+                                <a href="/website/index.html">Login?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Register Content -->
+
+        <!-- Register Footer -->
+       <!--  <div class="pulldown push-30-t text-center animated fadeInUp">
+            <small class="text-muted"><span class="js-year-copy"></span> &copy; GameJV</small>
+        </div> -->
+        <!-- END Register Footer -->
+
+        <!-- 协议 terms -->
+        <div class="modal fade" id="modal-terms_terms" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-popout  modal-lg">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">GameJV Launch ELITE DEVELOPER</h3>
+                        </div>
+                        <div class="block-content">
+                            <div  data-toggle="slimscroll" data-height="500px"  id="agreement_content_terms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal"><i class="fa fa-check"></i> I agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 协议 conditions -->
+        <div class="modal fade" id="modal-terms_condition" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-popout  modal-lg">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">GameJV DEVELOPER TERMS OF SERVICE</h3>
+                        </div>
+                        <div class="block-content">
+                            <div  data-toggle="slimscroll" data-height="500px"  id="agreement_content_condition">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal"><i class="fa fa-check"></i> I agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- 模态框 -->
+        <div class="modal fade" id="modal-fromleft" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-fromleft">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">Terms &amp; Conditions</h3>
+                        </div>
+                        <div class="block-content">
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal"><i class="fa fa-check"></i> Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app2.js"></script>
+        
+        <script src="assets/js/plugins/sweetalert/sweetalert.min.js"></script>
+        <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <!-- 引入api 配置 -->
+        <script src="api.js"></script>
+        <!-- <script src="assets/js/pages/base_pages_register.js"></script> -->
+        <script>
+            
+
+
+            App.initHelpers('slimscroll');
+            $("#agreement_content_terms").load('registry_term.html');
+            $("#agreement_content_condition").load('registry_condition.html');
+        
+            /*添加国家列表*/
+            $.ajax({
+                url:rootApi+'/resource/countries',
+                type:'GET',
+                dataType:'json',
+                success:function(data){
+                    var countries=data;
+                    var html;
+                    for(var i=0;i<countries.length;i++){
+                        var m='';
+                        if(countries[i].id==449){
+                            m='<option value='+countries[i].id+' phone-code='+countries[i].phoneCode+'  selected = "selected">'+countries[i].nameE+'</option>';
+                        }else{
+                            m='<option value='+countries[i].id+' phone-code='+countries[i].phoneCode+'>'+countries[i].nameE+'</option>';
+                        }
+                        html+=m;
+                    }
+                    $("#country").html(html);
+                }
+            });
+            var regisForm = $("#registForm");
+            //国家选择监听事件
+            regisForm.find('select').on('change',function(){
+                var phoneCode=regisForm.find('select').find('option:selected').attr("phone-code");
+                regisForm.find("input[name='contactNumber']").val('+'+phoneCode);
+            });
+            // 协议选择
+            itemAgree($("#register-terms").is(':checked'));
+            $("#labelClick").click(function(){
+                itemAgree($('#labelClick input').is(':checked'))
+            });
+            function itemAgree(sss){
+                if(sss){
+                    $("#submitFormBtn").removeClass('disabled').attr('disabled',false);
+                }else{
+                    $("#submitFormBtn").addClass('disabled').attr('disabled',true);
+                }
+            }
+
+            // 注册验证提交
+            jQuery('.js-validation-register').validate({
+                errorClass: 'help-block text-right animated fadeInDown',
+                errorElement: 'div',
+                errorPlacement: function(error, e) {
+                    jQuery(e).parents('.form-group > div').append(error);
+                },
+                highlight: function(e) {
+                    jQuery(e).closest('.form-group').removeClass('has-error').addClass('has-error');
+                    jQuery(e).closest('.help-block').remove();
+                },
+                success: function(e) {
+                    jQuery(e).closest('.form-group').removeClass('has-error');
+                    jQuery(e).closest('.help-block').remove();
+                },
+                rules: {
+                    'loginName':{
+                        required: true,
+                        isEmail:true
+                    },
+                    'loginPassword':{
+                        required:true,
+                        isPassword:true
+                    },
+                    'loginPassword2':{
+                        required:true,
+                        equalTo: '#loginPassword'
+                    },
+                    'companyName':{
+                        required:true,
+                    },
+                    /*'taxNumber':{
+                        required:true,
+                    },*/
+                    'address':{
+                        required:true,
+                    }/*,
+                    'billingAddress':{
+                        required:true,
+                    }*/,
+                    'telephone':{
+                        required:true,
+                        isPhone:true
+                    },
+                    'randomCode':{
+                        required:true
+                    }
+
+                },
+                messages: {
+                    'loginName': {
+                        required: 'Please enter a valid email format'
+                    },
+                    'loginPassword': {
+                        required: 'Please provide a password'
+                    },
+                    'loginPassword2': {
+                        required: 'Please provide a password',
+                        equalTo: 'Please enter the same password as above'
+                    },
+                    'address':{
+                        required:'Please enter your company address'
+                    },
+                    'companyName':{
+                        required:'Please enter your company Name'
+                    },
+                    'telephone':{
+                        required:'please enter your telephone'
+                    }
+                },
+                submitHandler:function(form){
+                    var sendData={
+                        "email":$("#loginName").val(),
+                        "password":$("#loginPassword").val(),
+                        "confirmPwd":$("#loginPassword2").val(),
+                        "company":$("#companyName").val(),
+                        "countryId":$("#country").val(),
+                        "contactNumber":$("#telephone").val()
+                    };
+                    $.ajax({
+                        url:rootApi+'/developer/registry/company',
+                        type:'POST',
+                        contentType:'application/json',
+                        data:JSON.stringify(sendData),
+                        success:function(data){
+                            swal({
+                                    title: '',
+                                    text: "邮件已发送",
+                                    type: 'success',
+                                    showCancelButton: true,
+                                    confirmButtonColor: '#d26a5c',
+                                    confirmButtonText: 'Ok',
+                                    closeOnConfirm: false,
+                                    html: false
+                                }, function () {
+                                    window.location.href='/website/index.html';
+                                });
+                        },
+                        error:function(data){
+                            swal('Oops', data.responseJSON)
+                        }
+                    })
+                },
+            });
+            // 校验邮箱格式、
+            jQuery.validator.addMethod("isEmail", function(value, element) {   
+                var tel =/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+                return this.optional(element) || (tel.test(value));
+            }, "Please enter a valid email format");
+            // 校验密码格式（6-16个字符）至少一个数字
+            jQuery.validator.addMethod("isPassword", function(value, element) {   
+                var tel =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+                return this.optional(element) || (tel.test(value));
+            }, "6-16 chars , at least 1 numberic.");
+            
+            // 校验电话号码为纯数字
+            jQuery.validator.addMethod("isPhone", function(value, element) {   
+                var tel =/^[+]?[0-9|\ ]*$/;
+                return this.optional(element) || (tel.test(value));
+            }, "please enter only number");
+        </script>
+    </body>
+</html>
