@@ -31,6 +31,12 @@
             {"content":"Version Manage and Download APK","url":"/versionPackage"},
             {"content":"Submit to Appstore","url":""},
             {"content":"Status of Review","url":"/agreementVersion"}
+		],
+		"appGroup":[
+			{"content":"Create App","url":""},
+            {"content":"New Channel","url":""},
+            {"content":"Choose ESA / China Area","url":"/setPay"},
+            {"content":"Download & integrating SDK","url":"/downloadSdk"}
 		]
 	},
 	"appList":{
@@ -62,6 +68,7 @@
 		"addGame_head_tip":"Please provide the following information to create your new App",
 		"addGame_con_title":"App Information",
 		"addGame_con_name":"App Name",
+		"addGame_con_key":"App Key",
 		"addGame_con_name_desc":"App English Title,if App Title is in other language",
 		"addGame_con_descript":"App Description",
 		"addGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
@@ -74,6 +81,7 @@
 		"editGame_head":"Edit Game",
 		"editGame_con_title":"App Information",
 		"editGame_con_name":"App Name",
+		"editGame_con_key":"App Key",
 		"editGame_con_name_desc":"App English Title,if App Title is in other language",
 		"editGame_con_descript":"App Description",
 		"editGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
@@ -116,6 +124,7 @@
 		"channelDetail_nextBtn":"Next Step",
 		"channelDetail_con_title":"Channel Information",
 		"channelDetail_con_name":"Channel Name",
+		"channelDetail_con_key":"Channel Key",
 		"channelDetail_con_descript":"Channel Description",
 		"channelDetail_versionList_title":"Version List",
 		"channelDetail_versionList_btn":"Creat New Version",

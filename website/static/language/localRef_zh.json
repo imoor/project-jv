@@ -31,6 +31,12 @@
             {"content":"APK下载及版本管理","url":"/versionPackage"},
             {"content":"提交到store","url":"/submitVersion"},
             {"content":"状态","url":"/agreementVersion"}
+		],
+		"appGroup":[
+			{"content":"创建App","url":""},
+            {"content":"New Channel","url":""},
+            {"content":"选择 ESA / China Area","url":"/setPay"},
+            {"content":"下载SDK","url":"/downloadSdk"}
 		]
 	},
 	"appList":{
@@ -61,6 +67,7 @@
 		"addGame_head_tip":"请提供以下信息创建您的新App",
 		"addGame_con_title":"App 信息",
 		"addGame_con_name":"App 名称",
+		"addGame_con_key":"App Key",
 		"addGame_con_name_desc":"App Title,if App Title is in other language",
 		"addGame_con_descript":"App 描述",
 		"addGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
@@ -71,6 +78,7 @@
 		"editGame_head":"编辑游戏",
 		"editGame_con_title":"App 信息",
 		"editGame_con_name":"App 名称",
+		"editGame_con_key":"App Key",
 		"editGame_con_name_desc":"App English Title,if App Title is in other language",
 		"editGame_con_descript":"App 描述",
 		"editGame_con_descript_desc":"Description of you App. Be Creative !(Max 400 characteers)",
@@ -108,6 +116,7 @@
 		"channelDetail_head":"Channel 详情",
 		"channelDetail_con_title":"Channel 信息",
 		"channelDetail_con_name":"Channel 名称",
+		"channelDetail_con_key":"Channel Key",
 		"channelDetail_con_descript":"Channel 描述",
 		"channelDetail_versionList_title":"版本列表",
 		"channelDetail_versionList_btn":"创建新版本",
