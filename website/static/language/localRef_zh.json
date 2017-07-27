@@ -29,8 +29,8 @@
             {"content":"选择 ESA / China Area","url":"/setPay"},
             {"content":"下载SDK","url":"/downloadSdk"},
             {"content":"APK下载及版本管理","url":"/versionPackage"},
-            {"content":"提交到store","url":"/submitVersion"},
-            {"content":"状态","url":"/agreementVersion"}
+            {"content":"提交到store","url":""},
+            {"content":"状态","url":""}
 		],
 		"appGroup":[
 			{"content":"创建App","url":""},
@@ -104,7 +104,9 @@
 		"addChannel_head":"创建 Channel",
 		"addChannel_con_title":"Channel 信息",
 		"addChannel_con_name":"Channel 名称",
-		"addChannel_con_des":"Channel 描述"
+		"addChannel_con_name_des":"Channel 名,一个更高层的类名,例如 王者荣耀 泰文版",
+		"addChannel_con_des":"Channel 描述",
+		"addChannel_con_des_des":"Channel 描述"
 	},
 	"editChannel":{
 		"editChannel_head":"编辑 Channel",
@@ -123,7 +125,10 @@
 		"channelDetail_versionList_table_1":"包名称",
 		"channelDetail_versionList_table_2":"包Code",
 		"channelDetail_versionList_table_3":"包地址",
-		"channelDetail_versionList_table_4":"包大小"
+		"channelDetail_versionList_table_4":"包大小",
+		"channelDetail_versionList_table_5":"打包状态",
+		"channelDetail_versionList_table_6":"上线状态",
+		"channelDetail_versionList_table_7":"操作"
 	},
 	"setPay":{
 		"setPay_head":"设置支付方式",
@@ -147,7 +152,8 @@
 		"package_head":"版本管理",
 		"package_con_up":"上传APK",
 		"package_con_name":"APK 名称",
-		"package_con_versionDes":"版本描述"
+		"package_con_versionDes":"版本描述",
+		"package_wrong_1":"请升级版本号"
 	},
 	"submit":{
 		"submit_head":"提交版本",

@@ -30,7 +30,7 @@
             {"content":"Download & integrating SDK","url":"/downloadSdk"},
             {"content":"Version Manage and Download APK","url":"/versionPackage"},
             {"content":"Submit to Appstore","url":""},
-            {"content":"Status of Review","url":"/agreementVersion"}
+            {"content":"Status of Review","url":""}
 		],
 		"appGroup":[
 			{"content":"Create App","url":""},
@@ -109,7 +109,9 @@
 		"addChannel_head":"Add Channel",
 		"addChannel_con_title":"Channel Information",
 		"addChannel_con_name":"Channel Name",
+		"addChannel_con_name_des":"Channel Name,it is higher level category name,e.g. Mario er II Thai Version",
 		"addChannel_con_des":"Channel Description",
+		"addChannel_con_des_des":"Channel Description",
 		"addChannel_btn_cancel":"Cancel",
 		"addChannel_btn_submit":"Next"
 	},
@@ -131,7 +133,10 @@
 		"channelDetail_versionList_table_1":"Package Name",
 		"channelDetail_versionList_table_2":"Package Code",
 		"channelDetail_versionList_table_3":"Package Url",
-		"channelDetail_versionList_table_4":"Package Size"
+		"channelDetail_versionList_table_4":"Package Size",
+		"channelDetail_versionList_table_5":"Package Status",
+		"channelDetail_versionList_table_6":"Online Status",
+		"channelDetail_versionList_table_7":"Operate"
 	},
 	"setPay":{
 		"setPay_head":"Set Payment",
@@ -155,7 +160,8 @@
 		"package_head":"Version Manager",
 		"package_con_up":"Upload APK",
 		"package_con_name":"APK Name",
-		"package_con_versionDes":"Version Description"
+		"package_con_versionDes":"Version Description",
+		"package_wrong_1":"Please increase your version code"
 	},
 	"submit":{
 		"submit_head":"Submit Version",
