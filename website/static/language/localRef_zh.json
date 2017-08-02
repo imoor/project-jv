@@ -3,7 +3,10 @@
 		"nextBtn":"下一步",
 		"confirmBtn":"确认",
 		"noData":"暂无数据",
-		"submitBtn":"提交"
+		"submitBtn":"提交",
+		"searchBtn":"查询",
+		"saveBtn":"保存",
+		"resetBtn":"重置"
 	},
 	"head":{
 		"head_account":"用户",
@@ -25,7 +28,7 @@
 	"step":{
 		"gameGroup":[
 			{"content":"创建App","url":""},
-            {"content":"New Channel","url":""},
+            {"content":"新渠道","url":""},
             {"content":"选择 ESA / China Area","url":"/setPay"},
             {"content":"下载SDK","url":"/downloadSdk"},
             {"content":"APK下载及版本管理","url":"/versionPackage"},
@@ -95,31 +98,34 @@
 		"appDetail_con_key":"密匙",
 		"appDetail_con_des":"描述",
 		"appDetail_con_cats":"种类",
-		"appDetail_channel_list_title":"Channel 列表",
-		"appDetail_channel_list_btn":"创建 Channel",
-		"appDetail_channel_table_name":"Channel 名称",
-		"appDetail_channel_table_detail":"Channel 详情"
+		"appDetail_channel_list_title":"渠道列表",
+		"appDetail_channel_list_btn":"创建渠道",
+		"appDetail_channel_table_name":"渠道名称",
+		"appDetail_channel_table_key":"渠道Key",
+		"appDetail_channel_table_lastVersion":"最新版本",
+		"appDetail_channel_table_lastTime":"最近版本时间",
+		"appDetail_channel_table_detail":"渠道详情"
 	},
 	"addChannel":{
-		"addChannel_head":"创建 Channel",
-		"addChannel_con_title":"Channel 信息",
-		"addChannel_con_name":"Channel 名称",
-		"addChannel_con_name_des":"Channel 名,一个更高层的类名,例如 王者荣耀 泰文版",
-		"addChannel_con_des":"Channel 描述",
-		"addChannel_con_des_des":"Channel 描述"
+		"addChannel_head":"创建渠道",
+		"addChannel_con_title":"渠道信息",
+		"addChannel_con_name":"渠道名称",
+		"addChannel_con_name_des":"渠道名,一个更高层的类名,例如 王者荣耀 泰文版",
+		"addChannel_con_des":"渠道描述",
+		"addChannel_con_des_des":"渠道描述"
 	},
 	"editChannel":{
-		"editChannel_head":"编辑 Channel",
-		"editChannel_con_title":"Channel 信息",
-		"editChannel_con_name":"Channel 名称",
-		"editChannel_con_des":"Channel 描述"
+		"editChannel_head":"编辑渠道",
+		"editChannel_con_title":"渠道信息",
+		"editChannel_con_name":"渠道名称",
+		"editChannel_con_des":"渠道描述"
 	},
 	"channelDetail":{
-		"channelDetail_head":"Channel 详情",
-		"channelDetail_con_title":"Channel 信息",
-		"channelDetail_con_name":"Channel 名称",
-		"channelDetail_con_key":"Channel Key",
-		"channelDetail_con_descript":"Channel 描述",
+		"channelDetail_head":"渠道详情",
+		"channelDetail_con_title":"渠道信息",
+		"channelDetail_con_name":"渠道名称",
+		"channelDetail_con_key":"渠道Key",
+		"channelDetail_con_descript":"渠道描述",
 		"channelDetail_versionList_title":"版本列表",
 		"channelDetail_versionList_btn":"创建新版本",
 		"channelDetail_versionList_table_1":"包名称",
@@ -128,7 +134,13 @@
 		"channelDetail_versionList_table_4":"包大小",
 		"channelDetail_versionList_table_5":"打包状态",
 		"channelDetail_versionList_table_6":"上线状态",
-		"channelDetail_versionList_table_7":"操作"
+		"channelDetail_versionList_table_7":"操作",
+		"channelDetail_versionList_status_agree":"协议",
+		"channelDetail_versionList_status_packaging":"正在打包",
+		"channelDetail_versionList_status_offline":"未上线",
+		"channelDetail_versionList_status_reviewing":"正在审核",
+		"channelDetail_versionList_status_success":"成功",
+		"channelDetail_versionList_status_reject":"拒绝"
 	},
 	"setPay":{
 		"setPay_head":"设置支付方式",
@@ -148,38 +160,75 @@
 		"download_con_table_1":"Android",
 		"download_con_table_2":"Unity"
 	},
+	"downloadPack":{
+		"head":"下载包",
+		"con_title":"包列表"
+	},
 	"package":{
 		"package_head":"版本管理",
 		"package_con_up":"上传APK",
 		"package_con_name":"APK 名称",
 		"package_con_versionDes":"版本描述",
-		"package_wrong_1":"请升级版本号"
+		"package_con_versionDes_des":"版本描述",
+		"apk_tip":"请确认您已经升级了版本code"
 	},
 	"submit":{
 		"submit_head":"提交版本",
-		"submit_icon":"App Icon",
-		"submit_icon_tip":"must be consistent with App software pack",
-		"submit_icon_size":"Icon Size",
-		"submit_icon_resolution":"Resolution",
-		"submit_icon_format":"Format",
-		"submit_screen":"App 截屏",
-		"submit_screen_tip":"Please upload 4 to 5 promotional assets",
-		"submit_screen_size":"Pic Size",
-		"submit_screen_format":"Format",
-		"submit_screen_storage":"Storage size"
+		"head_tip":"亲爱的开发者用户",
+		"head_tip_1":"已经准备好发布到",
+		"head_tip_2":"商店",
+		"head_tip_3":",如果您想提交它,请完成以下步骤",
+		"head_tip_4":"已经准备好发布到",
+		"head_tip_5":"亚洲商店",
+		"head_tip_6":",您可以自己发布此版本.如果您想请我们帮您发布，请选择一个商店",
+		"submit_icon":"应用Icon",
+		"submit_icon_tip":"必须与应用软件包一致",
+		"submit_icon_size":"Icon大小",
+		"submit_icon_resolution":"分辨率",
+		"submit_icon_format":"规格",
+		"submit_screen":"应用截屏",
+		"submit_screen_tip":"请上传4-5张截图",
+		"submit_screen_size":"尺寸",
+		"submit_screen_format":"规格",
+		"submit_screen_storage":"大小"
+	},
+	"agreement":{
+		"head":"审核结果",
+		"con_title":"状态",
+		"con_new_submit_1":"恭喜",
+		"con_new_submit_2":"您的应用已经正确提交。",
+		"con_new_submit_3":"我们将尽快为您审核。",
+		"con_new_review_reviewing_1":"正在审核",
+		"con_new_review_reviewing_2":"我们正在审核您的当前应用，请您耐心等待。",
+		"con_new_review_success_1":"审核通过",
+		"con_new_review_success_2":"恭喜您，您的当前应用已经成功通过审核。",
+		"con_new_review_success_3":"分数",
+		"con_new_review_success_4":"协议",
+		"con_new_review_success_5":"同意",
+		"con_new_review_success_6":"我们的协议",
+		"con_new_review_reject_1":"被拒绝",
+		"con_new_review_reject_2":"很抱歉，您的当前版本应用被拒绝上线，请查看一下原因",
+		"con_new_review_reject_3":"未通过原因",
+		"con_new_review_agreement_1":"您拒绝了我们的协议",
+		"con_new_review_agreement_2":"您同意了我们的协议"
 	},
 	"splashList":{
 		"splashList_head":"闪屏列表",
-		"splashList_con_btn":"添加闪屏"
+		"splashList_con_btn":"添加闪屏",
+		"splash_select_order":"选择顺序",
+		"splash_select_time":"选择次数",
+		"splash_edit":"修改"
 	},
 	"splashAdd":{
 		"splashAdd_head":"添加闪屏",
 		"splashAdd_con_title":"闪屏信息",
 		"splashAdd_con_screen":"闪屏图片",
 		"splashAdd_con_screen_tip":"请上传一张图",
-		"splashAdd_con_screen_size":"Pic Size",
-		"splashAdd_con_screen_format":"Format",
-		"splashAdd_con_screen_storage":"Storage size",
+		"splashAdd_con_screen_size":"尺寸",
+		"splashAdd_con_screen_format":"规格",
+		"splashAdd_con_screen_format_support":"支持",
+		"splashAdd_con_screen_storage":"大小",
+		"splashAdd_con_screen_storage_every":"图片",
 		"splashAdd_con_game":"选择游戏",
 		"splashAdd_con_channel":"选择游戏channel",
 		"splashAdd_con_time":"选择时间",
@@ -218,5 +267,33 @@
 		"adEdit_con_gameName":"游戏名",
 		"adEdit_con_gameVersion":"Channel",
 		"adEdit_con_data":"日期"
+	},
+	"loginData":{
+		"head":"登录数据",
+		"chart_title":"登录数据",
+		"table_title":"登录日志",
+		"table_1":"游戏名",
+		"table_2":"渠道名",
+		"table_3":"用户名",
+		"table_4":"渠道",
+		"table_5":"时间"
+	},
+	"userInfo":{
+		"head":"用户信息",
+		"head_tip":"您可以完善或编辑您的基本信息",
+		"con_title":"基本信息",
+		"con_name":"用户名 (邮箱)",
+		"con_nature":"帐号类型",
+		"con_nature_company":"公司",
+		"con_nature_individual":"个人",
+		"con_individual":"真实姓名",
+		"con_country":"国家",
+		"con_contact":"联系电话"
+	},
+	"resetPass":{
+		"head":"重置您的密码",
+		"Original":"原始密码",
+		"new":"新密码",
+		"repeat":"确认新密码"	
 	}
 }

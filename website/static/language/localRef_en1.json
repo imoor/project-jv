@@ -1,9 +1,14 @@
-{	"common":{
+{	
+	"common":{
 		"cancelBtn":"Cancel",
 		"nextBtn":"Next",
 		"confirmBtn":"Confirm",
 		"noData":"No Data",
-		"submitBtn":"Submit"
+		"submitBtn":"Submit",
+		"resubmitBtn":"Re-submit",
+		"searchBtn":"Search",
+		"saveBtn":"Save",
+		"resetBtn":"Reset"
 	},
 	"head":{
 		"head_account":"Account",
@@ -103,6 +108,9 @@
 		"appDetail_channel_list_title":"Channel List",
 		"appDetail_channel_list_btn":"Create Channel",
 		"appDetail_channel_table_name":"Channel Name",
+		"appDetail_channel_table_key":"Channel Key",
+		"appDetail_channel_table_lastVersion":"Lastest Version",
+		"appDetail_channel_table_lastTime":"Lastest Time",
 		"appDetail_channel_table_detail":"Channel Detail"
 	},
 	"addChannel":{
@@ -136,7 +144,13 @@
 		"channelDetail_versionList_table_4":"Package Size",
 		"channelDetail_versionList_table_5":"Package Status",
 		"channelDetail_versionList_table_6":"Online Status",
-		"channelDetail_versionList_table_7":"Operate"
+		"channelDetail_versionList_table_7":"Operate",
+		"channelDetail_versionList_status_agree":"Agreement",
+		"channelDetail_versionList_status_packaging":"packaging",
+		"channelDetail_versionList_status_offline":"off-line",
+		"channelDetail_versionList_status_reviewing":"Reviewing",
+		"channelDetail_versionList_status_success":"Approved",
+		"channelDetail_versionList_status_reject":"Rejected"
 	},
 	"setPay":{
 		"setPay_head":"Set Payment",
@@ -156,15 +170,27 @@
 		"download_con_table_1":"Android",
 		"download_con_table_2":"Unity"
 	},
+	"downloadPack":{
+		"head":"Download Packages",
+		"con_title":"PACKAGES"
+	},
 	"package":{
 		"package_head":"Version Manager",
 		"package_con_up":"Upload APK",
 		"package_con_name":"APK Name",
 		"package_con_versionDes":"Version Description",
-		"package_wrong_1":"Please increase your version code"
+		"package_con_versionDes_des":"Version Description",
+		"apk_tip":"Please make sure that the Version Code of you AndroidManifest.xml has been increased"
 	},
 	"submit":{
 		"submit_head":"Submit Version",
+		"head_tip":"Dear Developer",
+		"head_tip_1":"has been ready to publish in",
+		"head_tip_2":"Store",
+		"head_tip_3":",please finish the following steps if you want us to submit it",
+		"head_tip_4":"is ready to publish in",
+		"head_tip_5":"Asia Stores",
+		"head_tip_6":",You can publish this version by yourself.Or you can choose one AppStore if you want us to help on publish it",
 		"submit_icon":"App Icon",
 		"submit_icon_tip":"must be consistent with App software pack",
 		"submit_icon_size":"Icon Size",
@@ -176,9 +202,32 @@
 		"submit_screen_format":"Format",
 		"submit_screen_storage":"Storage size"
 	},
+	"agreement":{
+		"head":"Review Result of Build",
+		"con_title":"STATUS",
+		"con_new_submit_1":"Congratulations",
+		"con_new_submit_2":"your app has been properly submitted ！",
+		"con_new_submit_3":"We will check for you as soon as possible",
+		"con_new_review_reviewing_1":"Reviewing",
+		"con_new_review_reviewing_2":"Your app is being audited. Please be patient",
+		"con_new_review_success_1":"Approved",
+		"con_new_review_success_2":"Congratulations, your app audit has been audited successfully",
+		"con_new_review_success_3":"Score",
+		"con_new_review_success_4":"Agreement",
+		"con_new_review_success_5":"Agree to",
+		"con_new_review_success_6":"Agreement",
+		"con_new_review_reject_1":"Rejected",
+		"con_new_review_reject_2":"Sorry,Your App has been rejected by review team,Please check the following Guide line",
+		"con_new_review_reject_3":"Reason",
+		"con_new_review_agreement_1":"You turned down our agreement",
+		"con_new_review_agreement_2":"You have agreed to our agreement"
+	},
 	"splashList":{
 		"splashList_head":"Splash List",
-		"splashList_con_btn":"Add Splash"
+		"splashList_con_btn":"Add Splash",
+		"splash_select_order":"Select The Order",
+		"splash_select_time":"Select The Times",
+		"splash_edit":"修改"
 	},
 	"splashAdd":{
 		"splashAdd_head":"Splash Add ",
@@ -187,7 +236,9 @@
 		"splashAdd_con_screen_tip":"Please upload 1 assets",
 		"splashAdd_con_screen_size":"Pic Size",
 		"splashAdd_con_screen_format":"Format",
+		"splashAdd_con_screen_format_support":"support",
 		"splashAdd_con_screen_storage":"Storage size",
+		"splashAdd_con_screen_storage_every":"image",
 		"splashAdd_con_game":"Select Game",
 		"splashAdd_con_channel":"Channel of Game",
 		"splashAdd_con_time":"Select Time",
@@ -228,5 +279,33 @@
 		"adEdit_con_gameName":"Game Name",
 		"adEdit_con_gameVersion":"Channel",
 		"adEdit_con_data":"Data"
+	},
+	"loginData":{
+		"head":"Login Data",
+		"chart_title":"Login Data",
+		"table_title":"Login Log",
+		"table_1":"App Name",
+		"table_2":"Channel Name",
+		"table_3":"User Name",
+		"table_4":"Channel",
+		"table_5":"Time"
+	},
+	"userInfo":{
+		"head":"User Information",
+		"head_tip":"You can complete or Edit your Basic information",
+		"con_title":"Basic Information",
+		"con_name":"Developer Name (E-mail)",
+		"con_nature":"Nature Of Account",
+		"con_nature_company":"Company",
+		"con_nature_individual":"Individual",
+		"con_individual":"Individual",
+		"con_country":"Country",
+		"con_contact":"Contact"
+	},
+	"resetPass":{
+		"head":"Reset Your Password",
+		"Original":"Original Password",
+		"new":"Password",
+		"repeat":"Confirm Password"	
 	}
 }
