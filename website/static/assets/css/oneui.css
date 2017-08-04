@@ -969,6 +969,18 @@ fieldset[disabled] .btn-info.active {
   background-color: #f3b760;
   border-color: #efa231;
 }
+.btn-warningOn {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #efa231;
+}
+.btn-warningOn:focus,
+.btn-warningOn.focus,
+.btn-warningOn:hover {
+  color: #ffffff;
+  background-color: #f0a63a;
+  border-color: #d38310;
+}
 .btn-warning:focus,
 .btn-warning.focus,
 .btn-warning:hover {
