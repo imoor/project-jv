@@ -965,8 +965,7 @@ fieldset[disabled] .btn-info.active {
   background-color: #ffffff;
 }
 .languageActive{
-  color:#ffffff;
-  font-size: 20px;
+  color:#f3b760!important;
 }
 .btn-warning {
   color: #ffffff;
