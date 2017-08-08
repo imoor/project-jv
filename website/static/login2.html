@@ -90,9 +90,9 @@
                                 <a class="btn btn-minw btn-rounded btn-success" id="topBtn_1" data-toggle="appear" data-class="animated bounceIn"  type="button" href="#tigger" style="margin-right:60px;">Login</a>
                                 <a class="btn btn-minw btn-rounded btn-danger" id="topBtn_2" data-toggle="appear" data-class="animated bounceIn"  type="button" href="/#/registryEntry">registry</a>
                                 <div class="selectLanguage" style="display: inline-block;float: right;margin-right: 50px;">
-                                    <a class="btn btn btn-sm btn-default btn-warning" isLang="1" id="zh-language" href="javascript:void(0)">中文</a>
+                                    <a class="" isLang="1" id="zh-language" href="javascript:void(0)">中文</a>
                                     <span style="display: inline-block;width: 1px;height:23px;border:1px solid #dddddd;vertical-align: middle; "></span>
-                                    <a class="btn btn btn-sm btn-default" isLang="2" id="en-language" href="javascript:void(0)">English</a>
+                                    <a class="" isLang="2" id="en-language" href="javascript:void(0)">English</a>
                                 </div>
                                 <!-- <select name="" id="selectLang">
                                     <option value="1">简体中文</option>
@@ -328,10 +328,10 @@
             var languageSet=localData.get('_cm_local')
 
             if(languageSet){
-                $("div.selectLanguage a").removeClass('btn-warning');
+                $("div.selectLanguage a").removeClass('languageActive');
                 if(languageSet=='en-US'){
                     // $("#selectLang").val('2')
-                    $("a#en-language").addClass('btn-warning');
+                    $("a#en-language").addClass('languageActive');
                     var jsonApi;
                     $.ajax({
                         "url":'language/localRef_en1.json',
@@ -342,7 +342,7 @@
                         }
                     })
                 }else{
-                    $("a#zh-language").addClass('btn-warning');
+                    $("a#zh-language").addClass('languageActive');
                     // $("#selectLang").val('1')
                     var jsonApi;
                     $.ajax({
@@ -356,7 +356,7 @@
                 }
             }else{
                 localData.set('_cm_local','en-US');
-                $("a#en-language").addClass('btn-warning');
+                $("a#en-language").addClass('languageActive');
                 var jsonApi;
                 $.ajax({
                     "url":'language/localRef_en1.json',
