@@ -199,6 +199,7 @@
         <script src="assets/js/core/jquery.placeholder.min.js"></script>
         <script src="assets/js/core/js.cookie.min.js"></script>
         <script src="assets/js/app2.js"></script>
+        <link rel="stylesheet" href="assets/js/plugins/sweetalert/sweetalert.css">
         <script src="assets/js/plugins/sweetalert/sweetalert.min.js"></script>
         <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
         <script src="api.js"></script>
@@ -327,7 +328,6 @@
 
             // 默认为英文
             var languageSet=localData.get('_cm_local')
-
             if(languageSet){
                 $("div.selectLanguage a").removeClass('languageActive');
                 if(languageSet=='en-US'){

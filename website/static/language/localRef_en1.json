@@ -16,6 +16,14 @@
 		"btn":"Reset Password",
 		"bottom_tip":"Login ?"
 	},
+	"resetPass":{
+		"title":"Reset Your Password",
+		"pass":"New Password",
+		"pass_des":"Choose a strong password..",
+		"pass2":"Confirm Password",
+		"pass2_des":"..and confirm it",
+		"btn":"Reset"
+	},
 	"registryEntry":{
 		"title":"GameJV Registration Portal",
 		"btn_1":"Company",

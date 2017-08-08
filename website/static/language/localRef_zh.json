@@ -16,6 +16,14 @@
 		"btn":"重置密码",
 		"bottom_tip":"登录 ?"
 	},
+	"find_resetPass":{
+		"title":"重置您的密码",
+		"pass":"新密码",
+		"pass_des":"请选择强度较高的密码",
+		"pass2":"确认密码",
+		"pass2_des":"确认密码",
+		"btn":"重置"
+	},
 	"registryEntry":{
 		"title":"GameJV 注册入口",
 		"btn_1":"公司",
