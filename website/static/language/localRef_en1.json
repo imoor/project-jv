@@ -10,6 +10,12 @@
 		"topBtn_1":"Login",
 		"topBtn_2":"Registy"
 	},
+	"findPass":{
+		"title":"A link to reset your password will be sent to you",
+		"email":"Enter Your Email",
+		"btn":"Reset Password",
+		"bottom_tip":"Login ?"
+	},
 	"registryEntry":{
 		"title":"GameJV Registration Portal",
 		"btn_1":"Company",
@@ -53,6 +59,12 @@
 		"agreement_1":"I agree with",
 		"agreement_2":"View Terms",
 		"submitBtn":"Create Account",
+		"bottom_tip":"Login?"
+	},
+	"registry_confirm":{
+		"tip1":"To complete the sign up process, please verify on the link we had send to your following email.",
+		"tip2":"If you did not receive any email, please click on 'Send Again'",
+		"btn":"Send Again",
 		"bottom_tip":"Login?"
 	},
 	"common":{

@@ -10,6 +10,12 @@
 		"topBtn_1":"登录",
 		"topBtn_2":"注册"
 	},
+	"findPass":{
+		"title":"我们将发给您一个重置密码的连接",
+		"email":"输入您的邮箱",
+		"btn":"重置密码",
+		"bottom_tip":"登录 ?"
+	},
 	"registryEntry":{
 		"title":"GameJV 注册入口",
 		"btn_1":"公司",
@@ -53,6 +59,12 @@
 		"agreement_1":"我同意",
 		"agreement_2":"View Terms",
 		"submitBtn":"创建帐户",
+		"bottom_tip":"登录 ?"
+	},
+	"registry_confirm":{
+		"tip1":"To complete the sign up process, please verify on the link we had send to your following email.",
+		"tip2":"If you did not receive any email, please click on 'Send Again'",
+		"btn":"重新发送",
 		"bottom_tip":"登录 ?"
 	},
 	"common":{
