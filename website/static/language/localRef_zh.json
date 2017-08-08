@@ -1,4 +1,61 @@
-{	"common":{
+{	
+	"login":{
+		"email":"邮箱",
+		"password":"密码",
+		"password_des":"请输入您的密码",
+		"loginBtn":"登录",
+		"forgetPass":"忘记密码 ?",
+		"bottom_tip":"您还没有帐号？",
+		"signBtn":"立即注册",
+		"topBtn_1":"登录",
+		"topBtn_2":"注册"
+	},
+	"registryEntry":{
+		"title":"GameJV 注册入口",
+		"btn_1":"公司",
+		"btn_2":"个人",
+		"bottom_tip_1":"Warm Tips:",
+		"bottom_tip_2":"Enterprise Account will get more Customer Service and Technicial Support.",
+		"bottom_tip_3":"Individual Account will be good for small Indie Game Developer who will get more cheaper serviece.",
+		"bottom_tip_4":"For more details,please contact our Customer Service"
+	},
+	"registry_com":{
+		"title":"创建公司帐户",
+		"email":"用户名 (邮箱)",
+		"email_des":"awesome@developer.com",
+		"pass":"密码",
+		"pass_des":"6-16 chars, at least 1 numberic. eg. abc123",
+		"comfirm_pass":"确认密码",
+		"comfirm_pass_des":"Please enter the same password as above",
+		"companyName":"公司名称",
+		"companyName_des":"What do you call your company ?",
+		"country":"国家",
+		"contact":"联系电话",
+		"contact_des":"Phone number. Please enter only number.",
+		"agreement_1":"我同意",
+		"agreement_2":"View Terms",
+		"submitBtn":"创建帐户",
+		"bottom_tip":"登录 ?"
+	},
+	"registry_ind":{
+		"title":"创建个人帐户",
+		"email":"用户名 (邮箱)",
+		"email_des":"awesome@developer.com",
+		"pass":"密码",
+		"pass_des":"6-16 chars, at least 1 numberic. eg. abc123",
+		"comfirm_pass":"确认密码",
+		"comfirm_pass_des":"Please enter the same password as above",
+		"individual":"姓名",
+		"individual_des":"What do you call yourselves ?",
+		"country":"国家",
+		"contact":"联系电话",
+		"contact_des":"Phone number. Please enter only number.",
+		"agreement_1":"我同意",
+		"agreement_2":"View Terms",
+		"submitBtn":"创建帐户",
+		"bottom_tip":"登录 ?"
+	},
+	"common":{
 		"cancelBtn":"取消",
 		"nextBtn":"下一步",
 		"confirmBtn":"确认",
